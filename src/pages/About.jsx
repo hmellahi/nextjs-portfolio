@@ -25,7 +25,7 @@ const About = () => {
           Front End Engineer based in Morocco 🇲🇦, specializing in crafting engaging
           interfaces and optimizing web performance.
         </p>
-        <img src="/assets/nerd.gif" alt="" className="rounded-lg my-2 w-full"/>
+        <img src="/assets/nerd.gif" alt="nerd" className="rounded-lg my-2 w-full"/>
       </div>
 
       <div className="py-10 flex flex-col">

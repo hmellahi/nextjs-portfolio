@@ -35,6 +35,7 @@ export default function ProjectScreenshotsSwiper({ project }) {
           <div className="rounded-lg w-full h-full  shadow-lg">
             <img
               alt={name}
+              loading="lazy"
               className="rounded-2xl w-full h-full border-6 p-2"
               src={`/assets/screenshots/${screenshotsFolderRoot}/${screenshot}`}
             />
