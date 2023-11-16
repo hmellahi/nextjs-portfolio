@@ -1,228 +1,235 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
 import {
-    car,
-    contact,
-    css,
-    estate,
-    express,
-    git,
-    github,
-    html,
-    javascript,
-    linkedin,
-    mongodb,
-    motion,
-    mui,
-    nextjs,
-    nodejs,
-    pricewise,
-    react,
-    redux,
-    sass,
-    snapgram,
-    summiz,
-    tailwindcss,
-    threads,
-    typescript
+  car,
+  contact,
+  css,
+  estate,
+  express,
+  github,
+  html,
+  javascript,
+  linkedin,
+  mongodb,
+  nextjs,
+  nodejs,
+  postgres,
+  react,
+  redux,
+  sass,
+  snapgram,
+  tailwindcss,
+  threads,
+  typescript,
+  prisma
 } from "../assets/icons";
+import { fileqa, leytonLogo } from "../assets/images";
 
 export const skills = [
-    {
-        imageUrl: css,
-        name: "CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
-    },
-    {
-        imageUrl: git,
-        name: "Git",
-        type: "Version Control",
-    },
-    {
-        imageUrl: github,
-        name: "GitHub",
-        type: "Version Control",
-    },
-    {
-        imageUrl: html,
-        name: "HTML",
-        type: "Frontend",
-    },
-    {
-        imageUrl: javascript,
-        name: "JavaScript",
-        type: "Frontend",
-    },
-    {
-        imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
-    },
-    {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nodejs,
-        name: "Node.js",
-        type: "Backend",
-    },
-    {
-        imageUrl: react,
-        name: "React",
-        type: "Frontend",
-    },
-    {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
-    },
-    {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },
-    {
-        imageUrl: tailwindcss,
-        name: "Tailwind CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
-    }
+  {
+    imageUrl: css,
+    name: "CSS",
+    type: "Frontend",
+  },
+  {
+    imageUrl: express,
+    name: "Express",
+    type: "Backend",
+  },
+  {
+    imageUrl: html,
+    name: "HTML",
+    type: "Frontend",
+  },
+  {
+    imageUrl: javascript,
+    name: "JavaScript",
+    type: "Frontend",
+  },
+  {
+    imageUrl: mongodb,
+    name: "MongoDB",
+    type: "Database",
+  },
+  {
+    imageUrl: nextjs,
+    name: "Next.js",
+    type: "Frontend",
+  },
+  {
+    imageUrl: nodejs,
+    name: "Node.js",
+    type: "Backend",
+  },
+  {
+    imageUrl: react,
+    name: "React",
+    type: "Frontend",
+  },
+  {
+    imageUrl: redux,
+    name: "Redux",
+    type: "State Management",
+  },
+  {
+    imageUrl: sass,
+    name: "Sass",
+    type: "Frontend",
+  },
+  {
+    imageUrl: tailwindcss,
+    name: "Tailwind CSS",
+    type: "Frontend",
+  },
+  {
+    imageUrl: typescript,
+    name: "TypeScript",
+    type: "Frontend",
+  },
+  {
+    imageUrl: prisma,
+    name: "prisma",
+    type: "Frontend",
+  },
+  {
+    imageUrl: postgres,
+    name: "Postgres",
+    type: "Frontend",
+  },
 ];
-
+// CSS3, Docker, HTML5, JavaScript, Nestjs, Next.js, Node.js, Postgres, Prisma, React,
+// Redux, Tailwind, TypeScript
 export const experiences = [
-    {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+  {
+    title: "Co-founder and Full-stack Engineer",
+    company_name: "FileQA",
+    icon: fileqa,
+    iconBg: "#fbc3bc",
+    date: "May 2023 - Jul 2023",
+    points: [
+      "Helped over 100 users get instant insights from their documents",
+      "I handled the entire web development aspect, and managed the platform deployment.",
+      "Achieved an impressive 20% faster loading speed by implementing Server-side rendering.",
+    ],
+  },
+  {
+    title: "Intermediate Full-stack Developer",
+    company_name: "Leyton",
+    icon: leytonLogo,
+    iconBg: "#accbe1",
+    date: "Aug 2023",
+    points: [
+      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Contributed to the development of an innovative digital platform that empowers businesses in the USA to file for Employee Retention.",
+      "Achieved a 120% improvement in modal loading time by running multiple operations concurrently.",
+    ],
+  },
+  {
+    title: "Associate Full-stack Developer",
+    company_name: "Leyton",
+    icon: leytonLogo,
+    iconBg: "#accbe1",
+    date: "Aug 2022 - Jul 2023",
+    points: [
+      "Improved software reliability and reduced development costs by implementing comprehensive tests.",
+      "Achieved a 70% faster loading speed for a page by loading only necessary data.",
+      "Introduced micro frontends, enabling a seamless transition to new technologies while maintaining ongoing feature development.",
+      "Identified and resolved critical vulnerabilities, enhancing platform security.",
+      "Integrated Payments into the application and implemented robust security measures to safeguard it against breaches.",
+    ],
+  },
+  {
+    title: "Software Engineer Intern",
+    company_name: "Leyton",
+    icon: leytonLogo,
+    iconBg: "#fbc3bc",
+    date: "May 2022 - Jul 2022",
+    points: [
+      "Collaborated on a production consulting platform, delivering new features and bug fixes.",
+      "In 3 months, we improved a feature's performance by 400% through technology migration, also enhancing its user experience to be similar to that of Google Drive.",
+    ],
+  },
 ];
 
 export const socialLinks = [
-    {
-        name: 'Contact',
-        iconUrl: contact,
-        link: '/contact',
-    },
-    {
-        name: 'GitHub',
-        iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
-    },
-    {
-        name: 'LinkedIn',
-        iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
-    }
+  {
+    name: "Contact",
+    iconUrl: contact,
+    link: "/contact",
+  },
+  {
+    name: "GitHub",
+    iconUrl: github,
+    link: "https://github.com/hmellahi",
+  },
+  {
+    name: "LinkedIn",
+    iconUrl: linkedin,
+    link: "https://www.linkedin.com/in/hamza-mellahi/",
+  },
 ];
 
 export const projects = [
-    {
-        iconUrl: pricewise,
-        theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
-    },
-    {
-        iconUrl: threads,
-        theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
-    },
-    {
-        iconUrl: car,
-        theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
-    },
-    {
-        iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
-    },
-    {
-        iconUrl: estate,
-        theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
-    },
-    {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
+  {
+    iconUrl: fileqa,
+    theme: "btn-back-red",
+    name: "FileQA",
+    description:
+      "We have developed an interactive platform where users can ask questions about their documents or books and immediately receive precise and reliable answers.",
+    link: "https://fileqa.com/",
+    screenshotsFolderRoot: "file-qa",
+    screenshots: [
+      "conversation.png",
+      "my-space.png",
+      "pricing.png",
+      "contact-us.png",
+    ],
+  },
+  {
+    iconUrl: threads,
+    theme: "btn-back-green",
+    name: "Full Stack Twitter Clone",
+    description:
+      "Created a full-stack replica of the popular discussion platform 'Twitter,' enabling users to post and engage in conversations.",
+    link: "https://preads.hmellahi.me/",
+    repoLink: "https://github.com/hmellahi/Twitter-Clone",
+    screenshotsFolderRoot: "twitter",
+    screenshots: [
+      "feed.png",
+      "feed-with-tab-open.png",
+      "profile.png",
+      "community-members.jpg",
+      "community.jpg",
+      "sign-up.png",
+    ],
+  },
+  {
+    iconUrl: car,
+    theme: "btn-back-blue",
+    name: "🔥 🔥 Matcha 🔥 🔥 ",
+    description:
+      "Inspired by Tinder, this modern web application lets users find potential matches based on shared interests and location",
+    repoLink: "https://github.com/hmellahi/Tinder-Clone",
+    link: "https://matcha.hmellahi.me/",
+    screenshotsFolderRoot: "tinder",
+    screenshots: ["feed.png"],
+  },
+  {
+    iconUrl: snapgram,
+    theme: "btn-back-pink",
+    name: "Pink Pong",
+    description:
+      "Online Ping Pong Game with Multiplayer Gameplay and Real-Time Chat",
+    repoLink: "https://github.com/hmellahi/transcendence",
+    screenshotsFolderRoot: "pink-pong",
+    screenshots: ["game.png"],
+  },
+  {
+    iconUrl: estate,
+    theme: "btn-back-black",
+    name: "CUBE 3D",
+    description:
+      "I created a dynamic view inside a maze using C, inspired by the Wolfenstein 3D game",
+    repoLink: "https://github.com/hmellahi/CUBE",
+    screenshotsFolderRoot: "cube",
+    screenshots: ["game.png", "splash-screen.png"],
+  },
 ];
