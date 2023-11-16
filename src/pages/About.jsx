@@ -6,7 +6,7 @@ import {
 import { CTA } from "../components";
 import { experiences, skills } from "../constants";
 
-import "react-vertical-timeline-component/style.min.css"; 
+import "react-vertical-timeline-component/style.min.css";
 
 const About = () => {
   return (
@@ -22,10 +22,14 @@ const About = () => {
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
-          Front End Engineer based in Morocco 🇲🇦, specializing in crafting engaging
-          interfaces and optimizing web performance.
+          Front End Engineer based in Morocco 🇲🇦, specializing in crafting
+          engaging interfaces and optimizing web performance.
         </p>
-        <img src="/assets/nerd.gif" alt="nerd" className="rounded-lg my-2 w-full"/>
+        <img
+          src="/assets/nerd.gif"
+          alt="nerd"
+          className="rounded-lg my-2 w-full"
+        />
       </div>
 
       <div className="py-10 flex flex-col">
@@ -40,6 +44,7 @@ const About = () => {
               <div className="btn-back rounded-xl" />
               <div className="btn-front rounded-xl flex justify-center items-center">
                 <img
+                  loading="lazy"
                   src={skill.imageUrl}
                   alt={skill.name}
                   className="w-1/2 h-1/2 object-contain"
@@ -67,11 +72,11 @@ const About = () => {
                 date={experience.date}
                 icon={
                   // <div className="flex justify-center items-center w-full h-full overflow-hidden">
-                    <img
-                      src={experience.icon}
-                      alt={experience.company_name}
-                      className="w-[100%] h-[100%] object-fit"
-                    />
+                  <img
+                    src={experience.icon}
+                    alt={experience.company_name}
+                    className="w-[100%] h-[100%] object-fit"
+                  />
                   // </div>
                 }
                 contentStyle={{
@@ -79,7 +84,6 @@ const About = () => {
                   borderStyle: "solid",
                   borderBottomColor: experience.iconBg,
                   boxShadow: "none",
-                  
                 }}
                 className="!rounded-none"
                 iconClassName="!rounded-none"

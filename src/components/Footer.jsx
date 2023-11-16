@@ -16,6 +16,7 @@ const Footer = () => {
           {socialLinks.map((link) => (
             <Link key={link.name} to={link.link} target="_blank">
               <img
+                loading="lazy"
                 src={link.iconUrl}
                 alt={link.name}
                 className="w-6 h-6 object-contain"
