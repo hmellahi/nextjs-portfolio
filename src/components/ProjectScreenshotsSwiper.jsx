@@ -1,5 +1,5 @@
 import React from "react";
-import { EffectCards } from "swiper/modules";
+import { Autoplay, EffectCards } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -17,6 +17,18 @@ export default function ProjectScreenshotsSwiper({ project }) {
       grabCursor={true}
       modules={[EffectCards]}
       className="mySwiper"
+      autoplay={{
+        delay: 1300,
+        disableOnInteraction: true,
+      }}
+      coverflowEffect={{
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      }}
+      slideShadows={true}
     >
       {screenshots.map((screenshot) => (
         <SwiperSlide>
