@@ -1,5 +1,5 @@
 import React from "react";
-import { Autoplay, EffectCards } from "swiper/modules";
+import { EffectCards } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -9,7 +9,7 @@ import "swiper/css/effect-cards";
 import "./swiper.css";
 
 export default function ProjectScreenshotsSwiper({ project }) {
-  const { screenshots, screenshotsFolderRoot } = project;
+  const { screenshots, screenshotsFolderRoot, name } = project;
 
   return (
     <Swiper
@@ -34,6 +34,7 @@ export default function ProjectScreenshotsSwiper({ project }) {
         <SwiperSlide>
           <div className="rounded-lg w-full h-full  shadow-lg">
             <img
+              alt={name}
               className="rounded-2xl w-full h-full border-6 p-2"
               src={`/assets/screenshots/${screenshotsFolderRoot}/${screenshot}`}
             />
