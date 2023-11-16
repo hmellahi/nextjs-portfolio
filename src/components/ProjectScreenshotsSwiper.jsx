@@ -8,8 +8,14 @@ import "swiper/css/effect-cards";
 
 import "./swiper.css";
 
-export default function ProjectScreenshotsSwiper({ project }) {
+export default function ProjectScreenshotsSwiper({ project, isPriority }) {
   const { screenshots, screenshotsFolderRoot, name } = project;
+
+  const imgProps = [];
+
+  if (!isPriority) {
+    imgProps.push({ loading: "lazy" });
+  }
 
   return (
     <Swiper
@@ -21,23 +27,15 @@ export default function ProjectScreenshotsSwiper({ project }) {
         delay: 1300,
         disableOnInteraction: true,
       }}
-      coverflowEffect={{
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      }}
-      slideShadows={true}
     >
-      {screenshots.map((screenshot) => (
-        <SwiperSlide>
+      {screenshots.map((screenshot, index) => (
+        <SwiperSlide key={index}>
           <div className="rounded-lg w-full h-full  shadow-lg">
             <img
               alt={name}
-              loading="lazy"
               className="rounded-2xl w-full h-full border-6 p-2"
               src={`/assets/screenshots/${screenshotsFolderRoot}/${screenshot}`}
+              {...imgProps}
             />
           </div>
         </SwiperSlide>

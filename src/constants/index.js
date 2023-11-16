@@ -12,6 +12,7 @@ import {
   nextjs,
   nodejs,
   postgres,
+  prisma,
   react,
   redux,
   sass,
@@ -19,7 +20,6 @@ import {
   tailwindcss,
   threads,
   typescript,
-  prisma
 } from "../assets/icons";
 import { fileqa, leytonLogo } from "../assets/images";
 
@@ -177,10 +177,10 @@ export const projects = [
     link: "https://fileqa.com/",
     screenshotsFolderRoot: "file-qa",
     screenshots: [
-      "conversation.png",
-      "my-space.png",
+      "conversation.jpg",
+      "my-space.jpg",
       "pricing.png",
-      "contact-us.png",
+      "contact-us.jpg",
     ],
   },
   {
@@ -188,7 +188,7 @@ export const projects = [
     theme: "btn-back-green",
     name: "Full Stack Twitter Clone",
     description:
-      "Created a full-stack replica of the popular discussion platform 'Twitter,' enabling users to post and engage in conversations.",
+      "Created a full-stack replica of the popular discussion platform 'Twitter,' enabling users to post and engage in conversations.\n test account: \n email : test@acc.com, password",
     link: "https://preads.hmellahi.me/",
     repoLink: "https://github.com/hmellahi/Twitter-Clone",
     screenshotsFolderRoot: "twitter",
@@ -210,7 +210,7 @@ export const projects = [
     repoLink: "https://github.com/hmellahi/Tinder-Clone",
     link: "https://matcha.hmellahi.me/",
     screenshotsFolderRoot: "tinder",
-    screenshots: ["feed.png"],
+    screenshots: ["feed.jpg"],
   },
   {
     iconUrl: snapgram,
@@ -230,6 +230,6 @@ export const projects = [
       "I created a dynamic view inside a maze using C, inspired by the Wolfenstein 3D game",
     repoLink: "https://github.com/hmellahi/CUBE",
     screenshotsFolderRoot: "cube",
-    screenshots: ["game.png", "splash-screen.png"],
+    screenshots: ["game.jpg", "splash-screen.jpg"],
   },
 ];

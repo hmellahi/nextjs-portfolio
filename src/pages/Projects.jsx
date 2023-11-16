@@ -5,7 +5,7 @@ import { projects } from "../constants";
 
 const Projects = () => {
   return (
-    <section className="max-container lg:!px-0">
+    <section className="max-container xl:!px-0">
       <h1 className="head-text">
         My{" "}
         <span className="blue-gradient_text drop-shadow font-semibold">
@@ -28,13 +28,13 @@ const Projects = () => {
             key={project.name}
           >
             <div
-              className={`cursor-pointer mt-6 w-full md:w-[65%] h-[30rem] overflow-hidden ${
-                index % 2 == 0 && "md:order-2"
+              className={`cursor-pointer mt-6 w-full  lg:w-[65%] h-[30rem] overflow-hidden ${
+                index % 2 == 0 && "lg:order-2"
               }`}
             >
-              <ProjectScreenshotsSwiper project={project} />
+              <ProjectScreenshotsSwiper project={project} isPriority={index == 0} />
             </div>
-            <div className="mt-5 flex flex-col w-full md:w-[30%] ">
+            <div className=" flex flex-col w-full lg:w-[30%] px-10 lg:px-0">
               <h4 className="text-2xl font-poppins font-semibold">
                 {project.name}
               </h4>

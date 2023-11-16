@@ -25,11 +25,15 @@ const About = () => {
           Front End Engineer based in Morocco 🇲🇦, specializing in crafting
           engaging interfaces and optimizing web performance.
         </p>
-        <img
+        {/* <img
           src="/assets/nerd.gif"
           alt="nerd"
           className="rounded-lg my-2 w-full"
-        />
+        /> */}
+        <video className="rounded-lg my-2 w-full" autoPlay loop muted>
+          <source src="/assets/videos/nerd.mp4" type="video/mp4"></source>
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       <div className="py-10 flex flex-col">
