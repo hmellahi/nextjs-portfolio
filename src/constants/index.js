@@ -188,7 +188,7 @@ export const projects = [
     theme: "btn-back-green",
     name: "Full Stack Twitter Clone",
     description:
-      "Created a full-stack replica of the popular discussion platform 'Twitter,' enabling users to post and engage in conversations.\n test account: \n email : test@acc.com, password",
+    "Created a full-stack replica of the popular discussion platform 'Twitter,' enabling users to post and engage in conversations.\n\n Demo account: \n - email : test@acc.com \n - password: test",
     link: "https://preads.hmellahi.me/",
     repoLink: "https://github.com/hmellahi/Twitter-Clone",
     screenshotsFolderRoot: "twitter",

@@ -17,8 +17,7 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className="info-box">
         <p className="font-medium sm:text-xl text-center">
-          Worked with many companies <br /> and picked up many skills along the
-          way
+          I've worked on many projects, acquiring many skills.
         </p>
 
         <Link to="/about" className="neo-brutalism-white neo-btn">
@@ -33,8 +32,7 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className="info-box">
         <p className="font-medium text-center sm:text-xl">
-          Led multiple projects to success over the years. <br /> Curious about
-          the impact?
+          Worked on many projects. Want to know more about them?
         </p>
 
         <Link to="/projects" className="neo-brutalism-white neo-btn">

@@ -24,21 +24,21 @@ const Projects = () => {
       <div className="flex flex-wrap my-20 gap-16">
         {projects.map((project, index) => (
           <div
-            className="lg:w-full w-full flex gap-10 items-center relative flex-wrap "
+            className="lg:w-full w-full flex gap-10 items-center relative flex-wrap"
             key={project.name}
           >
             <div
-              className={`cursor-pointer mt-6 w-full  lg:w-[65%] h-[30rem] overflow-hidden ${
+              className={`cursor-pointer mt-6 w-full lg:w-[65%] h-[19rem] sm:h-[30rem] overflow-hidden ${
                 index % 2 == 0 && "lg:order-2"
               }`}
             >
               <ProjectScreenshotsSwiper project={project} isPriority={index == 0} />
             </div>
-            <div className=" flex flex-col w-full lg:w-[30%] px-10 lg:px-0">
-              <h4 className="text-2xl font-poppins font-semibold">
+            <div className=" flex flex-col w-full lg:w-[30%] px-6 lg:px-0">
+              <h4 className="text-xl sm:text-2xl font-poppins font-semibold">
                 {project.name}
               </h4>
-              <p className="mt-4 text-slate-500 ">{project.description}</p>
+              <p className="mt-4 text-slate-500 whitespace-pre-line	">{project.description}</p>
               <div className="flex gap-4">
                 {project?.link && (
                   <LinkWithLabel label="Demo link" link={project.link} />

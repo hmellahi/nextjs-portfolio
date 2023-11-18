@@ -72,7 +72,7 @@ const About = () => {
           <VerticalTimeline>
             {experiences.map((experience, index) => (
               <VerticalTimelineElement
-                key={experience.company_name}
+                key={experience.date}
                 date={experience.date}
                 icon={
                   // <div className="flex justify-center items-center w-full h-full overflow-hidden">

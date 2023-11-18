@@ -174,7 +174,7 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 .neo-brutalism-white {
-  background: #fff;
+  background: #fff; 
   border: #fff;
   box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
     0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
