@@ -75,13 +75,12 @@ const About = () => {
                 key={experience.date}
                 date={experience.date}
                 icon={
-                  // <div className="flex justify-center items-center w-full h-full overflow-hidden">
                   <img
                     src={experience.icon}
                     alt={experience.company_name}
                     className="w-[100%] h-[100%] object-fit"
+                    loading="lazy"
                   />
-                  // </div>
                 }
                 contentStyle={{
                   borderBottom: "8px",
