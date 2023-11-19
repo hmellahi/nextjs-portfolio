@@ -1,9 +1,9 @@
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useRef, useState } from "react";
 
+import { soundoff, soundon } from "../assets/icons";
 import sakura from "../assets/sakura.mp3";
 import { HomeInfo, Loader } from "../components";
-import { soundoff, soundon } from "../assets/icons";
 import { Bird, Island, Plane, Sky } from "../models";
 
 const Home = () => {
@@ -58,8 +58,8 @@ const Home = () => {
   const [islandScale, islandPosition] = adjustIslandForScreenSize();
 
   return (
-    <section className='w-full h-screen relative'>
-      <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
+    <section className="w-full h-screen relative">
+      <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
 
@@ -80,8 +80,8 @@ const Home = () => {
             intensity={2}
           />
           <hemisphereLight
-            skyColor='#b1e1ff'
-            groundColor='#000000'
+            skyColor="#b1e1ff"
+            groundColor="#000000"
             intensity={1}
           />
 
@@ -104,12 +104,12 @@ const Home = () => {
         </Suspense>
       </Canvas>
 
-      <div className='absolute bottom-2 left-2'>
+      <div className="absolute bottom-2 left-2">
         <img
           src={!isPlayingMusic ? soundoff : soundon}
-          alt='jukebox'
+          alt="jukebox"
           onClick={() => setIsPlayingMusic(!isPlayingMusic)}
-          className='w-10 h-10 cursor-pointer object-contain'
+          className="w-10 h-10 cursor-pointer object-contain"
         />
       </div>
     </section>
