@@ -1,9 +1,12 @@
-'use client'
+"use client";
 
-import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component/dist-modules";
 import { experiences } from "@/constants";
-import "react-vertical-timeline-component/style.min.css";
 import Image from "next/image";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component/dist-modules";
+import "react-vertical-timeline-component/style.min.css";
 
 export default function ExperienceTimeline() {
   return (
@@ -19,6 +22,7 @@ export default function ExperienceTimeline() {
               alt={experience.company_name}
               className="w-[100%] h-[100%] object-fit"
               loading="lazy"
+              sizes="(min-width: 1180px) 60px, 40px"
             />
           }
           contentStyle={{

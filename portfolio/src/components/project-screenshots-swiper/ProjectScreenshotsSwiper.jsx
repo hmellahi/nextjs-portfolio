@@ -51,7 +51,7 @@ export default function ProjectScreenshotsSwiper({ project, isPriority }) {
   }, [swiperInstance]);
 
   return (
-    <div ref={  } className="swiper-container h-full">
+    <div ref={swiperContainerRef} className="swiper-container h-full">
       <Swiper
         onSwiper={setSwiperInstance}
         effect={"cards"}
@@ -72,7 +72,7 @@ export default function ProjectScreenshotsSwiper({ project, isPriority }) {
                 src={`/assets/screenshots/${screenshotsFolderRoot}/${screenshot}`}
                 fill
                 priority={isPriority}
-                // sizes="(min-width: 1300px) 583px, (min-width: 1040px) 508px, (min-width: 640px) calc(90vw - 131px), (min-width: 540px) calc(90vw - 74px), (min-width: 400px) calc(105vw - 152px), calc(90vw - 74px)"
+                sizes="(min-width: 1300px) 583px, (min-width: 1040px) 508px, (min-width: 640px) calc(90vw - 131px), (min-width: 540px) calc(90vw - 74px), (min-width: 400px) calc(105vw - 152px), calc(90vw - 74px)"
                 {...imgProps}
               />
             </div>
