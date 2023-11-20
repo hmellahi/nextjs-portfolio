@@ -209,7 +209,7 @@ export const projects = [
     repoLink: "https://github.com/hmellahi/Tinder-Clone",
     link: "https://matcha.hmellahi.me/",
     screenshotsFolderRoot: "tinder",
-    screenshots: ["feed.jpg"],
+    screenshots: ["login.png", "feed.jpg", "profile.png", "settings.png"],
   },
   {
     iconUrl: snapgram,
