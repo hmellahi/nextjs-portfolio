@@ -1,15 +1,22 @@
 import Navbar from "@/components/Navbar/index";
+import { Poppins, Work_Sans } from "next/font/google";
 import Script from "next/script";
-import { Suspense } from "react";
 import "./globals.css";
-import { Poppins } from 'next/font/google'
 
 export const metadata = {
   title: "Hamza Mellahi | Portfolio",
   description: "Hamza Mellahi portfolio",
 };
 
-const poppins = Poppins({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
+const workSans = Work_Sans({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 const isDevelopment = process.env.NODE_ENV === "development";
 
@@ -22,7 +29,9 @@ export default function App({ children }) {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
         />
       </Head> */}
-      <body className={`${poppins?.className} font-poppins bg-slate-300/20`}>
+      <body
+        className={`${poppins?.className} ${workSans?.className} font-poppins bg-slate-300/20`}
+      >
         {!isDevelopment && (
           <>
             <Script
@@ -41,10 +50,8 @@ export default function App({ children }) {
             </Script>
           </>
         )}
-        <Suspense fallback={<div>Loading...</div>}>
-          <Navbar />
-          {children}
-        </Suspense>
+        <Navbar />
+        {children}
       </body>
     </html>
   );
