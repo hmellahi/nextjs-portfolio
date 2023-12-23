@@ -51,7 +51,10 @@ export default function ProjectScreenshotsSwiper({ project, isPriority }) {
   }, [swiperInstance]);
 
   return (
-    <div ref={swiperContainerRef} className="swiper-container h-full">
+    <div
+      ref={swiperContainerRef}
+      className="swiper-container h-full p-[1.6rem] sm:p-[2.6rem]"
+    >
       <Swiper
         onSwiper={setSwiperInstance}
         effect={"cards"}
@@ -65,14 +68,14 @@ export default function ProjectScreenshotsSwiper({ project, isPriority }) {
       >
         {screenshots.map((screenshot, index) => (
           <SwiperSlide key={index}>
-            <div className="rounded-lg w-full h-full shadow-lg card">
+            <div className="rounded-sm w-full h-full shadow-lg card">
               <Image
                 alt={name}
-                className="rounded-2xl w-full h-full !border-0 p-2"
+                className="rounded-2xl w-full h-auto !border-0 p-2 object-coDver"
                 src={`/assets/screenshots/${screenshotsFolderRoot}/${screenshot}`}
                 fill
                 priority={isPriority}
-                sizes="(min-width: 1300px) 583px, (min-width: 1040px) 508px, (min-width: 640px) calc(90vw - 131px), (min-width: 540px) calc(90vw - 74px), (min-width: 400px) calc(105vw - 152px), calc(90vw - 74px)"
+                // sizes="(min-width: 1300px) 583px, (min-width: 1040px) 508px, (min-width: 640px) calc(90vw - 131px), (min-width: 540px) calc(90vw - 74px), (min-width: 400px) calc(105vw - 152px), calc(90vw - 74px)"
                 {...imgProps}
               />
             </div>

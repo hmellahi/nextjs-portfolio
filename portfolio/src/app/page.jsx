@@ -4,12 +4,12 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useRef, useState } from "react";
 
 import HomeInfo from "@/components/HomeInfo";
+import Loader from "@/components/Loader";
 import { isSSR } from "@/helpers/isSSR";
 import { Bird, Island, Plane, Sky } from "@/models";
 import soundoff from "@@/assets/icons/soundoff.png";
 import soundon from "@@/assets/icons/soundon.png";
 import Image from "next/image";
-import Loader from "@/components/Loader";
 
 const Home = () => {
   const audioRef = useRef(isSSR() ? null : new Audio("/assets/sakura.mp3"));
@@ -70,7 +70,7 @@ const Home = () => {
   const [islandScale, islandPosition] = adjustIslandForScreenSize();
 
   return (
-    <section className="w-full h-screen relative dbg-[#8FD0EE]">
+    <section className="w-full h-screen relative">
       <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
@@ -123,6 +123,23 @@ const Home = () => {
           onClick={() => setIsPlayingMusic(!isPlayingMusic)}
           className="w-10 h-10 cursor-pointer object-contain"
         />
+      </div>
+      <div className=" absolute bottom-8 left-[calc(50%-12rem)] text-blue-500 px-6 py-3 bg-white rounded-md text-xl shadow-lg font-medium flex justify-center items-center gap-2">
+        Rotate right to see other sections
+        <svg
+          fill="currentColor"
+          width="24"
+          height="24"
+          xmlns="http://www.w3.org/2000/svg"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+        >
+          <path
+            d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
+            stroke="currentColor"
+            stroke-width="2"
+          />
+        </svg>
       </div>
     </section>
   );

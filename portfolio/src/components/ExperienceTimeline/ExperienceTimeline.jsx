@@ -15,6 +15,7 @@ export default function ExperienceTimeline() {
         <VerticalTimelineElement
           key={experience.date}
           date={experience.date}
+          visible={true}
           icon={
             <Image
               src={experience.icon}

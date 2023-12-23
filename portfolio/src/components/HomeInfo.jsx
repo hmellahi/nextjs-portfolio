@@ -1,4 +1,3 @@
-
 import arrow from "@@/assets/icons/arrow.svg";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,8 +12,7 @@ const HomeInfo = ({ currentStage }) => {
         <br />A Front-end Engineer from Morocco 🇲🇦
       </h1>
     );
-
-  if (currentStage === 2) {
+  else if (currentStage === 2) {
     return (
       <div className="info-box">
         <p className="font-medium sm:text-xl text-center">
@@ -27,9 +25,7 @@ const HomeInfo = ({ currentStage }) => {
         </Link>
       </div>
     );
-  }
-
-  if (currentStage === 3) {
+  } else if (currentStage === 3) {
     return (
       <div className="info-box">
         <p className="font-medium text-center sm:text-xl">
@@ -42,9 +38,7 @@ const HomeInfo = ({ currentStage }) => {
         </Link>
       </div>
     );
-  }
-
-  if (currentStage === 4) {
+  } else {
     return (
       <div className="info-box">
         <p className="font-medium sm:text-xl text-center">
@@ -59,8 +53,6 @@ const HomeInfo = ({ currentStage }) => {
       </div>
     );
   }
-
-  return null;
 };
 
 export default HomeInfo;

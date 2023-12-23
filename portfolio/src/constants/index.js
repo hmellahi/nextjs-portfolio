@@ -177,9 +177,9 @@ export const projects = [
     screenshotsFolderRoot: "file-qa",
     screenshots: [
       "conversation.jpg",
-      "my-space.jpg",
+      "my-space.png",
       "pricing.png",
-      "contact-us.jpg",
+      "contact-us.png",
     ],
   },
   {
@@ -203,7 +203,7 @@ export const projects = [
   {
     iconUrl: car,
     theme: "btn-back-blue",
-    name: "🔥 🔥 Matcha 🔥 🔥 ",
+    name: "Matcha 🔥 🔥 ",
     description:
       "Inspired by Tinder, this modern web application lets users find potential matches based on shared interests and location",
     repoLink: "https://github.com/hmellahi/Tinder-Clone",
@@ -219,7 +219,13 @@ export const projects = [
       "Online Ping Pong Game with Multiplayer Gameplay and Real-Time Chat",
     repoLink: "https://github.com/hmellahi/transcendence",
     screenshotsFolderRoot: "pink-pong",
-    screenshots: ["game.png"],
+    screenshots: [
+      "game.png",
+      "queue.png",
+      "leaderboard.png",
+      "settings.png",
+      "choose-map.png",
+    ],
   },
   {
     iconUrl: estate,
@@ -229,6 +235,6 @@ export const projects = [
       "I created a dynamic view inside a maze using C, inspired by the Wolfenstein 3D game",
     repoLink: "https://github.com/hmellahi/CUBE",
     screenshotsFolderRoot: "cube",
-    screenshots: ["game.jpg", "splash-screen.jpg"],
+    screenshots: ["game.jpg", "splash-screen.jpg", "gameover.png"],
   },
 ];

@@ -1,4 +1,4 @@
-import fileqa from "./fileqa.jpeg";
+import fileqa from "./fileqa.png";
 import hero from "./hero.jpg";
 import leytonLogo from "./leyton_logo.jpeg";
 import logo from "./logo.svg";

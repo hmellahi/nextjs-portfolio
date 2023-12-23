@@ -3,7 +3,7 @@ import CustomNavLink from "./CustomNavLink";
 
 const Navbar = () => {
   return (
-    <header className="header">
+    <header className="header font-poppins">
       <Link href="/">
         <div className="!bg-white p-2 rounded-lg font-poppins font-medium shadow-sm">
           <div className="blue-gradient_text ">
