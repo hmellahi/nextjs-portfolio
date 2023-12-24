@@ -1,10 +1,11 @@
-'use client'
+"use client";
 
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
 
 import { Alert, Loader } from "@/components";
+import Button from "@/components/Button";
 import useAlert from "@/hooks/useAlert";
 import { Fox } from "@/models/Fox";
 
@@ -14,6 +15,10 @@ const Contact = () => {
   const { alert, showAlert, hideAlert } = useAlert();
   const [loading, setLoading] = useState(false);
   const [currentAnimation, setCurrentAnimation] = useState("idle");
+
+  const emailJSPublicKey =  process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+  const emailJSServiceId =  process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  const emailJSTemplateId =  process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
 
   const handleChange = ({ target: { name, value } }) => {
     setForm({ ...form, [name]: value });
@@ -29,8 +34,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        emailJSServiceId,
+        emailJSTemplateId,
         {
           from_name: form.name,
           to_name: "Hamza Mellahi",
@@ -38,7 +43,7 @@ const Contact = () => {
           to_email: "hamzasenpai307@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        emailJSPublicKey
       )
       .then(
         () => {
@@ -127,15 +132,15 @@ const Contact = () => {
             />
           </label>
 
-          <button
+          <Button
+            className="flex justify-center items-center !py-2"
+            isLink={false}
             type="submit"
             disabled={loading}
-            className="btn"
             onFocus={handleFocus}
             onBlur={handleBlur}
-          >
-            {loading ? "Sending..." : "Submit"}
-          </button>
+            label={loading ? "Sending..." : "Submit"}
+          />
         </form>
       </div>
 

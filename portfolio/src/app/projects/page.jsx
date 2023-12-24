@@ -1,5 +1,5 @@
+import Button from "@/components/Button";
 import CTA from "@/components/CTA";
-import LinkWithLabel from "@/components/LinkWithLabel";
 import ProjectScreenshotsSwiper from "@/components/project-screenshots-swiper/ProjectScreenshotsSwiper";
 import { projects } from "@/constants";
 import { Suspense } from "react";
@@ -11,7 +11,6 @@ export default async function page() {
         {/* <div className='flex justify-center items-center '>
         <svg className='w-20 h-20 border-2 border-opacity-20 border-blue-500 border-t-blue-500 rounded-full animate-spin'></svg>
       </div> */}
-        
 
         {/* <svg class="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24"></svg> */}
         <h1 className="head-text">
@@ -54,12 +53,17 @@ export default async function page() {
                 </p>
                 <div className="flex gap-4">
                   {project?.link && (
-                    <LinkWithLabel label="Demo link" link={project.link} />
+                    <Button
+                      label="Demo link"
+                      link={project.link}
+                      isExternal={true}
+                    />
                   )}
                   {project.repoLink && (
-                    <LinkWithLabel
+                    <Button
                       label="Source Code"
                       link={project.repoLink}
+                      isExternal={true}
                     />
                   )}
                 </div>

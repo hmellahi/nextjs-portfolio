@@ -175,8 +175,12 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 .neo-brutalism-white {
-  background: #fff; 
+  background: #fff;
   border: #fff;
   box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
     0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
+}
+
+.primary-button {
+  @apply font-semibold transition ease-in-out delay-150 mt-5 flex items-center gap-2 font-poppins border-transparent border-2 hover:text-blue-500 hover:border-blue-500 p-3 rounded-md hover:bg-white shadow-lg bg-blue-500 text-white cursor-pointer;
 }
