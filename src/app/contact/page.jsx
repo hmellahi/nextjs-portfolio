@@ -16,9 +16,9 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [currentAnimation, setCurrentAnimation] = useState("idle");
 
-  const emailJSPublicKey =  process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
-  const emailJSServiceId =  process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-  const emailJSTemplateId =  process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+  const emailJSPublicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+  const emailJSServiceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  const emailJSTemplateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
 
   const handleChange = ({ target: { name, value } }) => {
     setForm({ ...form, [name]: value });
