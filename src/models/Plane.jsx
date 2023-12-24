@@ -1,13 +1,13 @@
-import { useAnimations, useGLTF } from "@react-three/drei";
 import { useEffect, useRef } from "react";
+import { useGLTF, useAnimations } from "@react-three/drei";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
-import planeScene from "../assets/3d/plane.glb";
 
 // 3D Model from: https://sketchfab.com/3d-models/stylized-ww1-plane-c4edeb0e410f46e8a4db320879f0a1db
 export function Plane({ isRotating, ...props }) {
   const ref = useRef();
   // Load the 3D model and its animations
-  const { scene, animations } = useGLTF(planeScene);
+  const { scene, animations } = useGLTF('/assets/3d/plane.glb', GLTFLoader);
   // Get animation actions associated with the plane
   const { actions } = useAnimations(animations, ref);
 

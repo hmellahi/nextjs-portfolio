@@ -1,19 +1,23 @@
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 import CustomNavLink from "./CustomNavLink";
 
 const Navbar = () => {
   return (
-    <header className="header">
-      <NavLink to="/">
+    <header className="header font-poppins">
+      <Link href="/">
         <div className="!bg-white p-2 rounded-lg font-poppins font-medium shadow-sm">
           <div className="blue-gradient_text ">
             H<span className="ml-1">M</span>
           </div>
         </div>
-      </NavLink>
+      </Link>
       <nav className="flex text-lg gap-3 md:gap-7 font-medium font-poppins">
-        <CustomNavLink key='about' to='/about'>About</CustomNavLink>
-        <CustomNavLink key='projects' to='/projects'>Projects</CustomNavLink>
+        <CustomNavLink key="about" href="/about">
+          About
+        </CustomNavLink>
+        <CustomNavLink key="projects" href="/projects">
+          Projects
+        </CustomNavLink>
       </nav>
     </header>
   );

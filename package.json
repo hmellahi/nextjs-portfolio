@@ -1,23 +1,27 @@
 {
-  "name": "3d-portfolio",
+  "name": "portfolio",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite --host",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "dev": "next dev -p 3002",
+
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@react-spring/three": "^9.7.3",
     "@react-three/drei": "^9.88.2",
     "@react-three/fiber": "^8.14.5",
+    "file-loader": "^6.2.0",
+    "next": "^14.0.0",
+    "next-transpile-modules": "^10.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.17.0",
     "react-vertical-timeline-component": "^3.6.0",
+    "sharp": "^0.32.6",
     "swiper": "^11.0.4",
     "three": "^0.157.0"
   },
@@ -26,12 +30,16 @@
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",
     "autoprefixer": "^10.4.16",
+    "css-loader": "^6.8.1",
     "eslint": "^8.45.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.3",
-    "vite": "^4.4.5"
+    "postcss-import": "^15.1.0",
+    "postcss-loader": "^7.3.3",
+    "style-loader": "^3.3.3",
+    "tailwindcss": "^3.3.0",
+    "typescript": "5.2.2"
   }
 }

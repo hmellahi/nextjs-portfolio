@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
 
-import { socialLinks } from "../constants";
+import { socialLinks } from "@/constants";
+import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -14,8 +15,8 @@ const Footer = () => {
 
         <div className="flex gap-3 justify-center items-center">
           {socialLinks.map((link) => (
-            <Link key={link.name} to={link.link} target="_blank">
-              <img
+            <Link key={link.name} href={link.link} target="_blank">
+              <Image
                 loading="lazy"
                 src={link.iconUrl}
                 alt={link.name}

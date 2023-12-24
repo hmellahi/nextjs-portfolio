@@ -1,19 +1,21 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+"use client";
 
-export default function CustomNavLink({ to, children }) {
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+export default function CustomNavLink({ href, children }) {
+  const pathname = usePathname();
+
+  const isActive = pathname === href;
+
   return (
-    <NavLink
-      to={to}
-      className={({ isActive}) =>
-        `border-2 border-white px-2 py-2 rounded-md shadow-lg text-sm md:text-lg ${
-          window.location.pathname !== "/" && "text-blue-500 "
-        } ${
-          !isActive ? "text-white border-blue-500" : "text-blue-500 bg-white"
-        }`
-      }
+    <Link
+      href={href}
+      className={`border-2  border-white px-2 py-2 rounded-md shadow-lg text-sm md:text-lg 
+      ${pathname !== "/" && "!text-blue-500 "}
+       ${!isActive ? "text-white border-blue-500" : "text-blue-500 bg-white"}`}
     >
       {children}
-    </NavLink>
+    </Link>
   );
 }

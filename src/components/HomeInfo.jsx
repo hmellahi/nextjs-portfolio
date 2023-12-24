@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-
-import { arrow } from "../assets/icons";
+import arrow from "@@/assets/icons/arrow.svg";
+import Image from "next/image";
+import Link from "next/link";
 
 const HomeInfo = ({ currentStage }) => {
   if (currentStage === 1)
@@ -9,41 +9,36 @@ const HomeInfo = ({ currentStage }) => {
         Hi, I'm
         <span className="font-semibold mx-2 text-white">Hamza</span>
         👋
-        <br />A Front-end Engineer from Morocco 🇲🇦
+        <br />A Front-end Developer from Morocco 🇲🇦
       </h1>
     );
-
-  if (currentStage === 2) {
+  else if (currentStage === 2) {
     return (
       <div className="info-box">
         <p className="font-medium sm:text-xl text-center">
           I've worked on many projects, acquiring many skills.
         </p>
 
-        <Link to="/about" className="neo-brutalism-white neo-btn">
+        <Link href="/about" className="neo-brutalism-white neo-btn">
           Learn more
-          <img src={arrow} alt="arrow" className="w-4 h-4 object-contain" />
+          <Image src={arrow} alt="arrow" className="w-4 h-4 object-contain" />
         </Link>
       </div>
     );
-  }
-
-  if (currentStage === 3) {
+  } else if (currentStage === 3) {
     return (
       <div className="info-box">
         <p className="font-medium text-center sm:text-xl">
           Worked on many projects. Want to know more about them?
         </p>
 
-        <Link to="/projects" className="neo-brutalism-white neo-btn">
+        <Link href="/projects" className="neo-brutalism-white neo-btn">
           Visit my portfolio
-          <img src={arrow} alt="arrow" className="w-4 h-4 object-contain" />
+          <Image src={arrow} alt="arrow" className="w-4 h-4 object-contain" />
         </Link>
       </div>
     );
-  }
-
-  if (currentStage === 4) {
+  } else {
     return (
       <div className="info-box">
         <p className="font-medium sm:text-xl text-center">
@@ -51,15 +46,13 @@ const HomeInfo = ({ currentStage }) => {
           keystrokes away
         </p>
 
-        <Link to="/contact" className="neo-brutalism-white neo-btn">
+        <Link href="/contact" className="neo-brutalism-white neo-btn">
           Let's talk
-          <img src={arrow} alt="arrow" className="w-4 h-4 object-contain" />
+          <Image src={arrow} alt="arrow" className="w-4 h-4 object-contain" />
         </Link>
       </div>
     );
   }
-
-  return null;
 };
 
 export default HomeInfo;

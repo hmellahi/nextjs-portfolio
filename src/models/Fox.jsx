@@ -9,15 +9,15 @@
  * YOU DON'T HAVE TO WRITE EVERYTHING FROM SCRATCH
  */
 
-import { useAnimations, useGLTF } from "@react-three/drei";
-import React, { useEffect, useRef } from "react";
+import React, { useRef, useEffect } from "react";
+import { useGLTF, useAnimations } from "@react-three/drei";
 
-import scene from "../assets/3d/fox.glb";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 // 3D Model from: https://sketchfab.com/3d-models/fox-f372c04de44640fbb6a4f9e4e5845c78
 export function Fox({ currentAnimation, ...props }) {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF(scene);
+  const { nodes, materials, animations } = useGLTF('/assets/3d/fox.glb', GLTFLoader);
   const { actions } = useAnimations(animations, group);
 
   // This effect will run whenever the currentAnimation prop changes
@@ -31,34 +31,34 @@ export function Fox({ currentAnimation, ...props }) {
 
   return (
     <group ref={group} {...props} dispose={null}>
-      <group name="Sketchfab_Scene">
+      <group name='Sketchfab_Scene'>
         <primitive object={nodes.GLTF_created_0_rootJoint} />
         <skinnedMesh
-          name="Object_7"
+          name='Object_7'
           geometry={nodes.Object_7.geometry}
           material={materials.PaletteMaterial001}
           skeleton={nodes.Object_7.skeleton}
         />
         <skinnedMesh
-          name="Object_8"
+          name='Object_8'
           geometry={nodes.Object_8.geometry}
           material={materials.PaletteMaterial001}
           skeleton={nodes.Object_8.skeleton}
         />
         <skinnedMesh
-          name="Object_9"
+          name='Object_9'
           geometry={nodes.Object_9.geometry}
           material={materials.PaletteMaterial001}
           skeleton={nodes.Object_9.skeleton}
         />
         <skinnedMesh
-          name="Object_10"
+          name='Object_10'
           geometry={nodes.Object_10.geometry}
           material={materials.PaletteMaterial001}
           skeleton={nodes.Object_10.skeleton}
         />
         <skinnedMesh
-          name="Object_11"
+          name='Object_11'
           geometry={nodes.Object_11.geometry}
           material={materials.PaletteMaterial001}
           skeleton={nodes.Object_11.skeleton}
@@ -68,4 +68,4 @@ export function Fox({ currentAnimation, ...props }) {
   );
 }
 
-useGLTF.preload(scene);
+// useGLTF.preload(scene);
