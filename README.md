@@ -1,4 +1,4 @@
-#My Portoflio
+# My Portoflio
 
 <img src='/public/home-screenshot.png'>
 
