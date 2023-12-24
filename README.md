@@ -1,4 +1,4 @@
-# My Portoflio
+# My Portfolio
 
 <img src='/public/home-screenshot.png'>
 
