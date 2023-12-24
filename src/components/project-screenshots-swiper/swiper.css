@@ -52,7 +52,3 @@
 .swiper-slide:nth-child(10n) {
   background-color: rgb(54, 94, 77);
 }
-
-/* .swiper-slide {
-  box-shadow: 0 0 0 4px #ff0000, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05);
-} */

@@ -17,6 +17,7 @@ module.exports = {
         },
         blue: {
           500: "#2b77e7",
+          700: "#2f478d",
         },
       },
       fontFamily: {
