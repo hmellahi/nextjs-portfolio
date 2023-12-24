@@ -17,7 +17,7 @@ const About = async() => {
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
-          Front End Engineer based in Morocco 🇲🇦, specializing in crafting
+          Front End Developer based in Morocco 🇲🇦, specializing in crafting
           engaging interfaces and optimizing web performance.
         </p>
         <video className="rounded-lg my-2 w-full shadow-xl" autoPlay loop muted>

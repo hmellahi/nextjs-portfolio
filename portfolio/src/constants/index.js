@@ -98,15 +98,16 @@ export const skills = [
 
 export const experiences = [
   {
-    title: "Co-founder and Full-stack Engineer",
+    title: "Co-founder and Full-stack Developer",
     company_name: "FileQA",
     icon: fileqa,
     iconBg: "#fbc3bc",
     date: "May 2023 - Jul 2023",
+    url:"https://fileqa.com/",
     points: [
       "Helped over 100 users get instant insights from their documents",
       "I handled the entire web development aspect, and managed the platform deployment.",
-      "Achieved an impressive 20% faster loading speed by implementing Server-side rendering.",
+      "Achieved a 20% faster loading speed by implementing Server-side rendering.",
     ],
   },
   {
@@ -115,6 +116,7 @@ export const experiences = [
     icon: leytonLogo,
     iconBg: "#accbe1",
     date: "Aug 2023",
+    url:"https://www.linkedin.com/company/leyton/",
     points: [
       "Participating in code reviews and providing constructive feedback to other developers.",
       "Contributed to the development of an innovative digital platform that empowers businesses in the USA to file for Employee Retention.",
@@ -127,10 +129,9 @@ export const experiences = [
     icon: leytonLogo,
     iconBg: "#accbe1",
     date: "Aug 2022 - Jul 2023",
+    url:"https://www.linkedin.com/company/leyton/",
     points: [
-      "Improved software reliability and reduced development costs by implementing comprehensive tests.",
       "Achieved a 70% faster loading speed for a page by loading only necessary data.",
-      "Introduced micro frontends, enabling a seamless transition to new technologies while maintaining ongoing feature development.",
       "Identified and resolved critical vulnerabilities, enhancing platform security.",
       "Integrated Payments into the application and implemented robust security measures to safeguard it against breaches.",
     ],
@@ -141,6 +142,7 @@ export const experiences = [
     icon: leytonLogo,
     iconBg: "#fbc3bc",
     date: "May 2022 - Jul 2022",
+    url:"https://www.linkedin.com/company/leyton/",
     points: [
       "Collaborated on a production consulting platform, delivering new features and bug fixes.",
       "In 3 months, we improved a feature's performance by 400% through technology migration, also enhancing its user experience to be similar to that of Google Drive.",

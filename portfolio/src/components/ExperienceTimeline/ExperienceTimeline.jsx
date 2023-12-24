@@ -17,13 +17,15 @@ export default function ExperienceTimeline() {
           date={experience.date}
           visible={true}
           icon={
-            <Image
-              src={experience.icon}
-              alt={experience.company_name}
-              className="w-[100%] h-[100%] object-fit"
-              loading="lazy"
-              sizes="(min-width: 1180px) 60px, 40px"
-            />
+            <a href={experience.url} target="_blank">
+              <Image
+                src={experience.icon}
+                alt={experience.company_name}
+                className="w-[100%] h-[100%] object-fit"
+                loading="lazy"
+                sizes="(min-width: 1180px) 60px, 40px"
+              />
+            </a>
           }
           contentStyle={{
             borderBottom: "8px",
