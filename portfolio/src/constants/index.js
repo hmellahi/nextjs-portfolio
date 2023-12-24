@@ -101,7 +101,7 @@ export const experiences = [
     title: "Co-founder and Full-stack Developer",
     company_name: "FileQA",
     icon: fileqa,
-    iconBg: "#fbc3bc",
+    iconBg: "#eb6655",
     date: "May 2023 - Jul 2023",
     url:"https://fileqa.com/",
     points: [
@@ -114,7 +114,7 @@ export const experiences = [
     title: "Intermediate Full-stack Developer",
     company_name: "Leyton",
     icon: leytonLogo,
-    iconBg: "#accbe1",
+    iconBg: "#509cd1",
     date: "Aug 2023",
     url:"https://www.linkedin.com/company/leyton/",
     points: [
@@ -127,7 +127,7 @@ export const experiences = [
     title: "Associate Full-stack Developer",
     company_name: "Leyton",
     icon: leytonLogo,
-    iconBg: "#accbe1",
+    iconBg: "#509cd1",
     date: "Aug 2022 - Jul 2023",
     url:"https://www.linkedin.com/company/leyton/",
     points: [
@@ -140,7 +140,7 @@ export const experiences = [
     title: "Software Engineer Intern",
     company_name: "Leyton",
     icon: leytonLogo,
-    iconBg: "#fbc3bc",
+    iconBg: "#eb6655",
     date: "May 2022 - Jul 2022",
     url:"https://www.linkedin.com/company/leyton/",
     points: [
