@@ -1,7 +1,6 @@
 import {
   car,
   contact,
-  css,
   estate,
   express,
   github,
@@ -17,20 +16,11 @@ import {
   tailwindcss,
   threads,
   typescript,
+  vue,
 } from "@@/assets/icons";
 import { fileqa, leytonLogo } from "@@/assets/images";
 
 export const skills = [
-  {
-    imageUrl: css,
-    name: "CSS",
-    type: "Frontend",
-  },
-  {
-    imageUrl: express,
-    name: "Express",
-    type: "Backend",
-  },
   {
     imageUrl: javascript,
     name: "JavaScript",
@@ -43,13 +33,13 @@ export const skills = [
     type: "Frontend",
   },
   {
-    imageUrl: nodejs,
-    name: "Node.js",
-    type: "Backend",
-  },
-  {
     imageUrl: react,
     name: "React",
+    type: "Frontend",
+  },
+  {
+    imageUrl: vue,
+    name: "Vue",
     type: "Frontend",
   },
   {
@@ -70,12 +60,22 @@ export const skills = [
   {
     imageUrl: prisma,
     name: "prisma",
-    type: "Frontend",
+    type: "Backend",
   },
   {
     imageUrl: postgres,
     name: "Postgres",
-    type: "Frontend",
+    type: "Backend",
+  },
+  {
+    imageUrl: nodejs,
+    name: "Node.js",
+    type: "Backend",
+  },
+  {
+    imageUrl: express,
+    name: "Express",
+    type: "Backend",
   },
 ];
 

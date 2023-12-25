@@ -1,7 +1,7 @@
 import CTA from "@/components/CTA";
 import ExperienceTimeline from "@/components/ExperienceTimeline/ExperienceTimeline";
+import Skill from "@/components/Skill";
 import { skills } from "@/constants";
-import Image from "next/image";
 
 const About = async () => {
   return (
@@ -31,20 +31,7 @@ const About = async () => {
 
         <div className="mt-12 flex flex-wrap gap-12">
           {skills.map((skill) => (
-            <div
-              className="block-container w-20 h-20 cursor-pointer"
-              key={skill.name}
-            >
-              <div className="btn-back rounded-xl" />
-              <div className="btn-front rounded-xl flex justify-center items-center">
-                <Image
-                  loading="lazy"
-                  src={skill.imageUrl}
-                  alt={skill.name}
-                  className="w-1/2 h-1/2 object-contain"
-                />
-              </div>
-            </div>
+            <Skill skill={skill}></Skill>
           ))}
         </div>
       </div>

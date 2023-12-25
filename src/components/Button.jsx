@@ -11,7 +11,7 @@ export default function Button({
   if (!isLink) {
     return (
       <button {...args} className={`primary-button ${className}`}>
-        {label}
+        <span className="z-20">{label}</span>
       </button>
     );
   }
@@ -27,7 +27,7 @@ export default function Button({
       rel="noopener noreferrer"
       className={`primary-button ${className}`}
     >
-      {label}
+      <span className="z-20">{label}</span>
     </Link>
   );
 }

@@ -26,6 +26,7 @@ import summiz from "./summiz.svg";
 import tailwindcss from "./tailwindcss.svg";
 import threads from "./threads.svg";
 import twitter from "./twitter.svg";
+import vue from "./vue.svg";
 import typescript from "./typescript.svg";
 import prisma from "./prisma.svg";
 
@@ -59,5 +60,6 @@ export {
   soundon,
   soundoff,
   postgres,
-  prisma
+  prisma,
+  vue
 };
