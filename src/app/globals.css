@@ -200,8 +200,7 @@ body:has(.card[data-color="green"]:hover) {
   @apply font-semibold flex items-center gap-2 p-3 border-blue-500 border-2 rounded-md text-blue-500  duration-300;
 
   &:not([disabled]) {
-    &:hover,
-    &:focus {
+    &:hover{
       @apply text-white;
     }
   }
