@@ -1,9 +1,9 @@
 import CTA from "@/components/CTA";
 import ExperienceTimeline from "@/components/ExperienceTimeline/ExperienceTimeline";
-import Image from "next/image";
 import { skills } from "@/constants";
+import Image from "next/image";
 
-const About = async() => {
+const About = async () => {
   return (
     <section className="max-container">
       <h1 className="head-text">
@@ -16,9 +16,9 @@ const About = async() => {
       </h1>
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        <p>
-          Front End Developer based in Morocco 🇲🇦, specializing in crafting
-          engaging interfaces and optimizing web performance.
+        <p className="mb-2">
+          Front End Developer based in Morocco 🇲🇦 <br /> Specializing in
+          crafting engaging interfaces and optimizing web performance.
         </p>
         <video className="rounded-lg my-2 w-full shadow-xl" autoPlay loop muted>
           <source src="/assets/videos/nerd.mp4" type="video/mp4"></source>

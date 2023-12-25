@@ -182,5 +182,13 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 .primary-button {
-  @apply font-semibold transition ease-in-out delay-150 mt-5 flex items-center gap-2 font-poppins border-transparent border-2 hover:text-blue-500 hover:border-blue-500 p-3 rounded-md hover:bg-white shadow-lg bg-blue-500 text-white cursor-pointer;
+  @apply font-semibold transition ease-in-out delay-150 mt-5 flex items-center gap-2 font-poppins border-transparent border-2 p-3 rounded-md shadow-lg text-white cursor-pointer bg-blue-500;
+
+  &:not([disabled]) {
+    @apply hover:text-blue-500 hover:border-blue-500 hover:bg-white;
+  }
+
+  [disabled] {
+    pointer-events: none;
+  }
 }

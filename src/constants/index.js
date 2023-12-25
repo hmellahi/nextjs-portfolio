@@ -5,17 +5,14 @@ import {
   estate,
   express,
   github,
-  html,
   javascript,
   linkedin,
-  mongodb,
   nextjs,
   nodejs,
   postgres,
   prisma,
   react,
   redux,
-  sass,
   snapgram,
   tailwindcss,
   threads,
@@ -35,20 +32,11 @@ export const skills = [
     type: "Backend",
   },
   {
-    imageUrl: html,
-    name: "HTML",
-    type: "Frontend",
-  },
-  {
     imageUrl: javascript,
     name: "JavaScript",
     type: "Frontend",
   },
-  {
-    imageUrl: mongodb,
-    name: "MongoDB",
-    type: "Database",
-  },
+
   {
     imageUrl: nextjs,
     name: "Next.js",
@@ -68,11 +56,6 @@ export const skills = [
     imageUrl: redux,
     name: "Redux",
     type: "State Management",
-  },
-  {
-    imageUrl: sass,
-    name: "Sass",
-    type: "Frontend",
   },
   {
     imageUrl: tailwindcss,
@@ -103,7 +86,7 @@ export const experiences = [
     icon: fileqa,
     iconBg: "#eb6655",
     date: "May 2023 - Jul 2023",
-    url:"https://fileqa.com/",
+    url: "https://fileqa.com/",
     points: [
       "Helped over 100 users get instant insights from their documents",
       "I handled the entire web development aspect, and managed the platform deployment.",
@@ -116,7 +99,7 @@ export const experiences = [
     icon: leytonLogo,
     iconBg: "#509cd1",
     date: "Aug 2023",
-    url:"https://www.linkedin.com/company/leyton/",
+    url: "https://www.linkedin.com/company/leyton/",
     points: [
       "Participating in code reviews and providing constructive feedback to other developers.",
       "Contributed to the development of an innovative digital platform that empowers businesses in the USA to file for Employee Retention.",
@@ -129,7 +112,7 @@ export const experiences = [
     icon: leytonLogo,
     iconBg: "#509cd1",
     date: "Aug 2022 - Jul 2023",
-    url:"https://www.linkedin.com/company/leyton/",
+    url: "https://www.linkedin.com/company/leyton/",
     points: [
       "Achieved a 70% faster loading speed for a page by loading only necessary data.",
       "Identified and resolved critical vulnerabilities, enhancing platform security.",
@@ -142,7 +125,7 @@ export const experiences = [
     icon: leytonLogo,
     iconBg: "#eb6655",
     date: "May 2022 - Jul 2022",
-    url:"https://www.linkedin.com/company/leyton/",
+    url: "https://www.linkedin.com/company/leyton/",
     points: [
       "Collaborated on a production consulting platform, delivering new features and bug fixes.",
       "In 3 months, we improved a feature's performance by 400% through technology migration, also enhancing its user experience to be similar to that of Google Drive.",
