@@ -182,13 +182,27 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 .primary-button {
-  @apply font-semibold transition ease-in-out delay-150 mt-5 flex items-center gap-2 font-poppins border-transparent border-2 p-3 rounded-md shadow-lg text-white cursor-pointer bg-blue-500;
+  position: relative;
+}
+
+.primary-button::after {
+  @apply absolute inset-y-0 left-0 bg-blue-500 z-10 block w-0 h-full;
+  content: "";
+  transition: all 0.2s linear;
+}
+
+.primary-button:not([disabled]):hover::after {
+  @apply w-full;
+}
+
+.primary-button {
+  display: inline-block;
+  @apply font-semibold flex items-center gap-2 p-3 border-blue-500 border-2 rounded-md text-blue-500  duration-300;
 
   &:not([disabled]) {
-    @apply hover:text-blue-500 hover:border-blue-500 hover:bg-white;
-  }
-
-  [disabled] {
-    pointer-events: none;
+    &:hover,
+    &:focus {
+      @apply text-white;
+    }
   }
 }
