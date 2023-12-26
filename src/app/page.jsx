@@ -124,7 +124,7 @@ const Home = () => {
           className="w-10 h-10 cursor-pointer object-contain"
         />
       </div>
-      <div className=" absolute bottom-8 left-[calc(50%-12rem)] text-blue-500 px-6 py-3 bg-white rounded-md text-xl shadow-lg font-medium flex justify-center items-center gap-2">
+      <div className=" absolute bottom-20 sm:bottom-8 left-[calc(50%-12rem)] text-blue-500 px-3 sm:px-6 py-3 bg-white rounded-md text-xl shadow-lg font-medium flex justify-center items-center gap-2">
         Rotate right to see other sections
         <svg
           fill="currentColor"
