@@ -170,7 +170,7 @@ export const projects = [
   {
     iconUrl: threads,
     theme: "btn-back-green",
-    name: "Full Stack Twitter Clone",
+    name: "TwitMate",
     description:
       "Created a full-stack replica of the popular discussion platform 'Twitter,' enabling users to post and engage in conversations.\n\n Demo account: \n - email : test@acc.com \n - password: test",
     link: "https://preads.hmellahi.me/",
@@ -190,7 +190,7 @@ export const projects = [
     theme: "btn-back-blue",
     name: "Matcha 🔥 🔥 ",
     description:
-      "Inspired by Tinder, this modern web application lets users find potential matches based on shared interests and location",
+      "Inspired by Tinder, this website lets users find potential matches based on shared interests and location",
     repoLink: "https://github.com/hmellahi/Tinder-Clone",
     link: "https://matcha.hmellahi.me/",
     screenshotsFolderRoot: "tinder",
@@ -220,6 +220,12 @@ export const projects = [
       "I created a dynamic view inside a maze using C, inspired by the Wolfenstein 3D game",
     repoLink: "https://github.com/hmellahi/CUBE",
     screenshotsFolderRoot: "cube",
-    screenshots: ["game.jpg", "splash-screen.jpg", "gameover.png"],
+    screenshots: [
+      "game.png",
+      "sprites.png",
+      "guard.png",
+      "splash-screen.jpg",
+      "gameover.png",
+    ],
   },
 ];
