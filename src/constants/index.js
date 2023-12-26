@@ -161,7 +161,7 @@ export const projects = [
     link: "https://fileqa.com/",
     screenshotsFolderRoot: "file-qa",
     screenshots: [
-      "conversation.jpg",
+      "conversation-with-book.png",
       "my-space.png",
       "pricing.png",
       "contact-us.png",
