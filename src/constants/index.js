@@ -103,7 +103,7 @@ export const experiences = [
     points: [
       "Participating in code reviews and providing constructive feedback to other developers.",
       "Contributed to the development of an innovative digital platform that empowers businesses in the USA to file for Employee Retention.",
-      "Achieved a 120% improvement in modal loading time by running multiple operations concurrently.",
+      // "Achieved a 120% improvement in modal loading time by running multiple operations concurrently.",
     ],
   },
   {
