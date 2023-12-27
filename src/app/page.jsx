@@ -70,7 +70,7 @@ const Home = () => {
   const [islandScale, islandPosition] = adjustIslandForScreenSize();
 
   return (
-    <section className="w-full h-screen relative bg-blue-700">
+    <section className="w-full h-screen relative">
       <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
@@ -121,10 +121,10 @@ const Home = () => {
           src={!isPlayingMusic ? soundoff : soundon}
           alt="jukebox"
           onClick={() => setIsPlayingMusic(!isPlayingMusic)}
-          className="w-10 h-10 cursor-pointer object-contain"
+          className="w-14 sm:w-20 h-14 sm:h-14 cursor-pointer object-contain"
         />
       </div>
-      <div className=" absolute bottom-20 sm:bottom-8 left-[calc(50%-12rem)] text-blue-500 px-3 sm:px-6 py-3 bg-white rounded-md text-xl shadow-lg font-medium flex justify-center items-center gap-2">
+      <div className=" absolute bottom-20 sm:bottom-16 left-[calc(50%-12rem)] text-blue-500 px-3 sm:px-6 py-3 bg-white rounded-md text-xl shadow-lg font-medium flex justify-center items-center gap-2">
         Rotate right to see other sections
         <svg
           fill="currentColor"
