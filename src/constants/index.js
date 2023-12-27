@@ -180,8 +180,8 @@ export const projects = [
       "feed.png",
       "feed-with-tab-open.png",
       "profile.png",
-      "community-members.jpg",
-      "community.jpg",
+      "community.png",
+      "community-members.png",
       "sign-up.png",
     ],
   },
@@ -206,10 +206,10 @@ export const projects = [
     screenshotsFolderRoot: "pink-pong",
     screenshots: [
       "game.png",
+      "choose-map.png",
       "queue.png",
       "leaderboard.png",
       "settings.png",
-      "choose-map.png",
     ],
   },
   {
