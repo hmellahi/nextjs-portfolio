@@ -155,6 +155,18 @@ export const projects = [
   {
     iconUrl: fileqa,
     theme: "btn-back-red",
+    name: "Behavewise (WIP)",
+    description:
+      "I am building a Platform to help you Boost your interview confidence! \n\n \
+      It's an interview preparation tool that provides AI feedback on your mock interviews.",
+    link: "https://behavewise.vercel.app/",
+    repoLink: "https://github.com/hmellahi/behavewise",
+    screenshotsFolderRoot: "behavewise",
+    screenshots: ["landing-page.png", "interview2.png", "feedback.png"],
+  },
+  {
+    iconUrl: fileqa,
+    theme: "btn-back-red",
     name: "FileQA",
     description:
       "We have developed an interactive platform where users can ask questions about their documents or books and immediately receive precise and reliable answers.",
