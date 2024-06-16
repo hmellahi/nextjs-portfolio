@@ -41,7 +41,7 @@ const About = async () => {
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
           <p>
             My experience at Leyton and FileQA honed my skills, collaborating
-            with talented individuals. Here's the rundown:
+            with talented teammates. Here's the rundown:
           </p>
         </div>
 
