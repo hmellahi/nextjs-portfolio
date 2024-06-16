@@ -26,22 +26,21 @@ export const skills = [
     name: "JavaScript",
     type: "Frontend",
   },
-
-  {
-    imageUrl: nextjs,
-    name: "Next.js",
-    type: "Frontend",
-  },
   {
     imageUrl: react,
     name: "React",
     type: "Frontend",
   },
   {
-    imageUrl: vue,
-    name: "Vue",
+    imageUrl: nextjs,
+    name: "Next.js",
     type: "Frontend",
   },
+  // {
+  //   imageUrl: vue,
+  //   name: "Vue",
+  //   type: "Frontend",
+  // },
   {
     imageUrl: redux,
     name: "Redux",
@@ -72,11 +71,11 @@ export const skills = [
     name: "Node.js",
     type: "Backend",
   },
-  {
-    imageUrl: express,
-    name: "Express",
-    type: "Backend",
-  },
+  // {
+  //   imageUrl: express,
+  //   name: "Express",
+  //   type: "Backend",
+  // },
 ];
 
 export const experiences = [
@@ -88,9 +87,9 @@ export const experiences = [
     date: "May 2023 - Jul 2023",
     url: "https://fileqa.com/",
     points: [
-      "Helped over 100 users get instant insights from their documents",
-      "I handled the entire web development aspect, and managed the platform deployment.",
-      "Achieved a 20% faster loading speed by implementing Server-side rendering.",
+      "Helped over 100 users get instant insights from their documents.",
+      "I handled the web development aspect and managed the platform deployment.",
+      // "I achieved a 20% faster loading speed by implementing Server-side rendering.",
     ],
   },
   {
@@ -101,9 +100,10 @@ export const experiences = [
     date: "Aug 2023",
     url: "https://www.linkedin.com/company/leyton/",
     points: [
-      "Participating in code reviews and providing constructive feedback to other developers.",
-      "Contributed to the development of an innovative digital platform that empowers businesses in the USA to file for Employee Retention.",
-      // "Achieved a 120% improvement in modal loading time by running multiple operations concurrently.",
+      "Conducted front-end code reviews.",
+      "We integrated payments into the application and implemented robust security measures to safeguard it against breaches.",
+      "I have contributed to the development of an innovative digital platform that empowers businesses in the USA to file for Employee Retention."
+      // "I have contributed to the front-end development of a platform to help the consultants write their reports in a few hours instead of days.",
     ],
   },
   {
@@ -114,9 +114,8 @@ export const experiences = [
     date: "Aug 2022 - Jul 2023",
     url: "https://www.linkedin.com/company/leyton/",
     points: [
-      "Achieved a 70% faster loading speed for a page by loading only necessary data.",
+      "Collaborated on a production consulting platform, delivering new features and bug fixes.",
       "Identified and resolved critical vulnerabilities, enhancing platform security.",
-      "Integrated Payments into the application and implemented robust security measures to safeguard it against breaches.",
     ],
   },
   {
@@ -127,8 +126,8 @@ export const experiences = [
     date: "May 2022 - Jul 2022",
     url: "https://www.linkedin.com/company/leyton/",
     points: [
-      "Collaborated on a production consulting platform, delivering new features and bug fixes.",
-      "In 3 months, we improved a feature's performance by 400% through technology migration, also enhancing its user experience to be similar to that of Google Drive.",
+      "I introduced micro frontends, enabling a seamless transition to new technologies while maintaining ongoing feature development.",
+      "In 3 months, we improved the document-sharing feature performance by 400% through technology migration and made it similar to Google Drive.",
     ],
   },
 ];
@@ -162,7 +161,7 @@ export const projects = [
     link: "https://behavewise.vercel.app/",
     repoLink: "https://github.com/hmellahi/behavewise",
     screenshotsFolderRoot: "behavewise",
-    screenshots: ["landing-page.png", "interview2.png", "feedback.png"],
+    screenshots: ["landing-page.png", "interview.jpg", "feedback.png"],
   },
   {
     iconUrl: fileqa,
