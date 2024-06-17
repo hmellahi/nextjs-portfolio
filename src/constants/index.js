@@ -101,6 +101,7 @@ export const experiences = [
     url: "https://www.linkedin.com/company/leyton/",
     points: [
       "Conducted front-end code reviews.",
+      "I developed the front-end of an AI-powered platform that generates reports in minutes, instead of writing them manually in days.",
       "We integrated payments into the application and implemented robust security measures to safeguard it against breaches.",
       "I have contributed to the development of an innovative digital platform that empowers businesses in the USA to file for Employee Retention."
       // "I have contributed to the front-end development of a platform to help the consultants write their reports in a few hours instead of days.",
