@@ -87,6 +87,7 @@ export const experiences = [
     date: "May 2023 - Jul 2023",
     url: "https://fileqa.com/",
     points: [
+      "We have developed a SaaS platform where users can ask questions about their documents or books and immediately receive precise and reliable answers.",
       "Helped over 100 users get instant insights from their documents.",
       "I handled the web development aspect and managed the platform deployment.",
       // "I achieved a 20% faster loading speed by implementing Server-side rendering.",
@@ -101,10 +102,8 @@ export const experiences = [
     url: "https://www.linkedin.com/company/leyton/",
     points: [
       "Conducted front-end code reviews.",
-      "I developed the front-end of an AI-powered platform that generates reports in minutes, instead of writing them manually in days.",
-      "We integrated payments into the application and implemented robust security measures to safeguard it against breaches.",
-      "I have contributed to the development of an innovative digital platform that empowers businesses in the USA to file for Employee Retention."
-      // "I have contributed to the front-end development of a platform to help the consultants write their reports in a few hours instead of days.",
+      "Developed the front-end interface for an AI-powered reporting platform, empowering users to generate technical reports in minutes, instead of manual writing in days.",
+      "Integrated payments into an application and implemented robust security measures to safeguard it against breaches.",
     ],
   },
   {
@@ -115,8 +114,10 @@ export const experiences = [
     date: "Aug 2022 - Jul 2023",
     url: "https://www.linkedin.com/company/leyton/",
     points: [
+      "Contributed to the development of an innovative digital platform that empowers businesses in the USA to file for Employee Retention.",
       "Collaborated on a production consulting platform, delivering new features and bug fixes.",
       "Identified and resolved critical vulnerabilities, enhancing platform security.",
+      "Implemented unit tests.",
     ],
   },
   {
@@ -127,7 +128,7 @@ export const experiences = [
     date: "May 2022 - Jul 2022",
     url: "https://www.linkedin.com/company/leyton/",
     points: [
-      "I introduced micro frontends, enabling a seamless transition to new technologies while maintaining ongoing feature development.",
+      "Introduced micro frontends, enabling a seamless transition to new technologies while maintaining ongoing feature development.",
       "In 3 months, we improved the document-sharing feature performance by 400% through technology migration and made it similar to Google Drive.",
     ],
   },
@@ -190,7 +191,7 @@ export const projects = [
     screenshotsFolderRoot: "twitter",
     screenshots: [
       "feed.png",
-      "feed-with-tab-open.png",
+      // "feed-with-tab-open.png",
       "profile.png",
       "community.png",
       "community-members.png",
