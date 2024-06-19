@@ -171,6 +171,7 @@ export const projects = [
     name: "FileQA",
     description:
       "We have developed an interactive platform where users can ask questions about their documents or books and immediately receive precise and reliable answers.",
+    articleLink:"https://blog.hmellahi.me/my-journey-of-building-our-first-saas-product",
     link: "https://fileqa.com/",
     screenshotsFolderRoot: "file-qa",
     screenshots: [
