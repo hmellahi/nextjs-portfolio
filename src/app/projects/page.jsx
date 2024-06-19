@@ -61,7 +61,24 @@ export default async function page() {
                       isExternal={true}
                     />
                   )}
+                   {project.articleLink && (
+                    <Button
+                      label="Building Process"
+                      link={project.articleLink}
+                      isExternal={true}
+                    />
+                  )}
                 </div>
+                {/* <div>
+                  {project.articleLink && (
+                    <Button
+                      className={"mt-3"}
+                      label="Building Process"
+                      link={project.articleLink}
+                      isExternal={true}
+                    />
+                  )}
+                </div> */}
               </div>
             </div>
           ))}
