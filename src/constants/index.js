@@ -78,20 +78,6 @@ export const skills = [
 
 export const experiences = [
   {
-    title: "Co-founder and Full-stack Developer",
-    company_name: "FileQA",
-    icon: fileqa,
-    iconBg: "#eb6655",
-    date: "May 2023 - Jul 2023",
-    url: "https://fileqa.com/",
-    points: [
-      "We have developed a SaaS platform where users can ask questions about their documents or books and immediately receive precise and reliable answers.",
-      "Helped over 100 users get instant insights from their documents.",
-      "I handled the web development aspect and managed the platform deployment.",
-      // "I achieved a 20% faster loading speed by implementing Server-side rendering.",
-    ],
-  },
-  {
     title: "Intermediate Full-stack Developer",
     company_name: "Leyton",
     icon: leytonLogo,
@@ -128,6 +114,20 @@ export const experiences = [
     points: [
       "Introduced micro frontends, enabling a seamless transition to new technologies while maintaining ongoing feature development.",
       "In 3 months, we improved the document-sharing feature performance by 400% through technology migration and made it similar to Google Drive.",
+    ],
+  },
+  {
+    title: "Co-founder and Full-stack Developer",
+    company_name: "FileQA",
+    icon: fileqa,
+    iconBg: "#eb6655",
+    date: "May 2023 - Jul 2023",
+    url: "https://fileqa.com/",
+    points: [
+      "We have developed a SaaS platform where users can ask questions about their documents or books and immediately receive precise and reliable answers.",
+      "Helped over 100 users get instant insights from their documents.",
+      "I handled the web development aspect and managed the platform deployment.",
+      // "I achieved a 20% faster loading speed by implementing Server-side rendering.",
     ],
   },
 ];
@@ -185,7 +185,6 @@ export const projects = [
     name: "TwitMate",
     description:
       "Created a full-stack replica of the popular discussion platform 'Twitter,' enabling users to post and engage in conversations.\n\n Demo account: \n - email : test@acc.com \n - password: test",
-    link: "https://preads.hmellahi.me/",
     repoLink: "https://github.com/hmellahi/Twitter-Clone",
     screenshotsFolderRoot: "twitter",
     screenshots: [
