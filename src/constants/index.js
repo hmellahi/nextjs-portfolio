@@ -2,7 +2,6 @@ import {
   car,
   contact,
   estate,
-  express,
   github,
   javascript,
   linkedin,
@@ -15,8 +14,7 @@ import {
   snapgram,
   tailwindcss,
   threads,
-  typescript,
-  vue,
+  typescript
 } from "@@/assets/icons";
 import { fileqa, leytonLogo } from "@@/assets/images";
 
@@ -156,7 +154,7 @@ export const projects = [
   {
     iconUrl: fileqa,
     theme: "btn-back-red",
-    name: "Behavewise (WIP)",
+    name: "Behavewise (STOPPED)",
     description:
       "I am building a Platform to help you Boost your interview confidence! \n\n \
       It's an interview preparation tool that provides AI feedback on your mock interviews.",
@@ -191,7 +189,7 @@ export const projects = [
     repoLink: "https://github.com/hmellahi/Twitter-Clone",
     screenshotsFolderRoot: "twitter",
     screenshots: [
-      "feed.png",
+      // "feed.png",
       // "feed-with-tab-open.png",
       "profile.png",
       "community.png",
@@ -206,7 +204,6 @@ export const projects = [
     description:
       "Inspired by Tinder, this website lets users find potential matches based on shared interests and location",
     repoLink: "https://github.com/hmellahi/Tinder-Clone",
-    link: "https://matcha.hmellahi.me/",
     screenshotsFolderRoot: "tinder",
     screenshots: ["login.png", "feed.jpg", "profile.png", "settings.png"],
   },

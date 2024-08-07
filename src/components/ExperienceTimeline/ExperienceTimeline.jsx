@@ -15,7 +15,6 @@ export default function ExperienceTimeline() {
         <VerticalTimelineElement
           key={experience.date}
           date={experience.date}
-          visible={true}
           icon={
             <a href={experience.url} target="_blank">
               <Image

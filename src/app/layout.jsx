@@ -6,7 +6,7 @@ import "./globals.css";
 export const metadata = {
   title: "Hamza Mellahi | Portfolio",
   description:
-    "http://hmellahi.me is the personal website of Hamza Mellahi, a Software Engineer and Content Creator. Built with Next.js 13.",
+    "http://hmellahi.me is the personal website of Hamza Mellahi, a Software Engineer. Built with Next.js 14.",
   author: "Hamza Mellahi",
   url: "http://hmellahi.me",
   keywords: ["Software Engineer", "Content Creator", "Next.js", "Portfolio", "React.js"], // Relevant keywords for your website

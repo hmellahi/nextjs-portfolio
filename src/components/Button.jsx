@@ -16,15 +16,15 @@ export default function Button({
     );
   }
 
-  if (isExternal) {
-    args["target"] = "_blank";
+  if (isExternal){
+    args.target = '_blank'
   }
 
   return (
     <Link
       {...args}
       href={link}
-      rel="noopener noreferrer"
+      rel="noopener noreferrer nofollow"
       className={`primary-button ${className}`}
     >
       <span className="z-20">{label}</span>
