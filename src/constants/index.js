@@ -34,11 +34,6 @@ export const skills = [
     name: "Next.js",
     type: "Frontend",
   },
-  // {
-  //   imageUrl: vue,
-  //   name: "Vue",
-  //   type: "Frontend",
-  // },
   {
     imageUrl: redux,
     name: "Redux",
@@ -69,11 +64,6 @@ export const skills = [
     name: "Node.js",
     type: "Backend",
   },
-  // {
-  //   imageUrl: express,
-  //   name: "Express",
-  //   type: "Backend",
-  // },
 ];
 
 export const experiences = [
