@@ -17,6 +17,7 @@ import nodejs from "./nodejs.svg";
 import pricewise from "./pricewise.svg";
 import postgres from "./postgres.svg";
 import react from "./react.svg";
+import nestjs from "./nestjs.svg";
 import redux from "./redux.svg";
 import sass from "./sass.svg";
 import snapgram from "./snapgram.svg";
@@ -26,7 +27,6 @@ import summiz from "./summiz.svg";
 import tailwindcss from "./tailwindcss.svg";
 import threads from "./threads.svg";
 import twitter from "./twitter.svg";
-import vue from "./vue.svg";
 import typescript from "./typescript.svg";
 import prisma from "./prisma.svg";
 
@@ -61,5 +61,5 @@ export {
   soundoff,
   postgres,
   prisma,
-  vue
+  nestjs
 };
