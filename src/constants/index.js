@@ -7,6 +7,7 @@ import {
   linkedin,
   nextjs,
   nodejs,
+  nestjs,
   postgres,
   prisma,
   react,
@@ -64,6 +65,11 @@ export const skills = [
     name: "Node.js",
     type: "Backend",
   },
+  {
+    imageUrl: nestjs,
+    name: "Nestjs",
+    type: "Backend",
+  },
 ];
 
 export const experiences = [
@@ -112,7 +118,7 @@ export const experiences = [
     icon: fileqa,
     iconBg: "#eb6655",
     date: "May 2023 - Jul 2023",
-    url: "https://fileqa.com/",
+    url: "https://fileqa.com/", 
     points: [
       "We have developed a SaaS platform where users can ask questions about their documents or books and immediately receive precise and reliable answers.",
       "Helped over 100 users get instant insights from their documents.",

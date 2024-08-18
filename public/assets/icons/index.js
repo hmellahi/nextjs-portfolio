@@ -14,6 +14,7 @@ import nodejs from "./nodejs.svg";
 import postgres from "./postgres.svg";
 import prisma from "./prisma.svg";
 import react from "./react.svg";
+import nestjs from "./nestjs.svg";
 import redux from "./redux.svg";
 import sass from "./sass.svg";
 import snapgram from "./snapgram.svg";
@@ -50,4 +51,5 @@ export {
   soundoff,
   postgres,
   prisma,
+  nestjs
 };
