@@ -31,7 +31,7 @@ const About = async () => {
 
         <div className="mt-12 flex flex-wrap gap-12">
           {skills.map((skill) => (
-            <Skill skill={skill}></Skill>
+            <Skill skill={skill} />
           ))}
         </div>
       </div>

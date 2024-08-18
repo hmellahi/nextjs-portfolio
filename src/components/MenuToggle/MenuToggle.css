@@ -1,0 +1,59 @@
+:root {
+  --nav-width: 30px;
+  --nav-height: 22.5px;
+}
+
+#nav-icon {
+  width: var(--nav-width);
+  height: var(--nav-height);
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  transform: scale(.75);
+}
+
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: calc(var(--nav-height) * 0.2);
+  width: 100%;
+  background: white;
+  border-radius: calc(var(--nav-height) * 0.2);
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+#nav-icon span:nth-child(1) {
+  top: 0;
+  transform-origin: left center;
+}
+
+#nav-icon span:nth-child(2) {
+  top: calc(var(--nav-height) * 0.4);
+  transform-origin: left center;
+}
+
+#nav-icon span:nth-child(3) {
+  top: calc(var(--nav-height) * 0.8);
+  transform-origin: left center;
+}
+
+#nav-icon.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: calc(var(--nav-height) * -0.067);
+  left: calc(var(--nav-width) * 0.133);
+}
+
+#nav-icon.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#nav-icon.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: calc(var(--nav-height) * 0.867);
+  left: calc(var(--nav-width) * 0.133);
+}

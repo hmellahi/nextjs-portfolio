@@ -41,4 +41,5 @@ Contributions and feedback are welcome! Please feel free to create issues or sub
 ## Credits and Acknowledgments
 
 This portfolio is based on the [3D Portfolio project](https://github.com/adrianhajdin/3D_portfolio) by Adrian Hajdin.
+
 ---

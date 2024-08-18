@@ -28,25 +28,19 @@ export default function TestimonialCard({ testimonial }) {
   );
 }
 
-const ImageComponent = ({ src, alt, className }) => (
-  <Image
-    src={src}
-    alt={alt}
-    width={180}
-    height={160}
-    className={`rounded-full ${className}`}
-  />
-);
-
 const ProfileImage = ({ link, profileImgUrl, name }) => {
   if (!profileImgUrl) return null;
 
   const imageComponent = (
-    <ImageComponent
-      src={profileImgUrl}
-      alt={name}
-      className="-mt-20 z-10 absolute right-[35%] p-4"
-    />
+    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <Image
+        src={profileImgUrl}
+        alt={name}
+        width={180}
+        height={180}
+        className="rounded-full shadow-xl"
+      />
+    </div>
   );
 
   return link ? (

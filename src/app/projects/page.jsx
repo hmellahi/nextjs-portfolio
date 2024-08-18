@@ -61,7 +61,7 @@ export default async function page() {
                       isExternal={true}
                     />
                   )}
-                   {project.articleLink && (
+                  {project.articleLink && (
                     <Button
                       label="Building Process"
                       link={project.articleLink}
@@ -69,16 +69,6 @@ export default async function page() {
                     />
                   )}
                 </div>
-                {/* <div>
-                  {project.articleLink && (
-                    <Button
-                      className={"mt-3"}
-                      label="Building Process"
-                      link={project.articleLink}
-                      isExternal={true}
-                    />
-                  )}
-                </div> */}
               </div>
             </div>
           ))}

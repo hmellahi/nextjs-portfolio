@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 :root {
-  --blue-rgb: 237 245 255;
+  --primary-rgb: 237 245 255;
   --green-rgb: 125 161 35;
 }
 
@@ -13,7 +25,7 @@ body {
 }
 
 body:has(.card[data-color="blue"]:hover) {
-  background-color: rgb(var(--blue-rgb) / 25%);
+  background-color: rgb(var(--primary-rgb) / 25%);
 }
 
 body:has(.card[data-color="green"]:hover) {
@@ -22,7 +34,7 @@ body:has(.card[data-color="green"]:hover) {
 
 @layer utilities {
   .max-container {
-    @apply max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
+    @apply max-w-5xl mx-auto sm:p-16 pb-12 !pt-[9rem] px-8 min-h-[calc(100vh-80px)];
   }
 
   .head-text {
@@ -38,19 +50,19 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .input {
-    @apply bg-white border border-gray-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mt-2.5 font-normal shadow-card;
+    @apply bg-white border border-gray-200 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 mt-2.5 font-normal shadow-card;
   }
 
   .textarea {
-    @apply block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-200 focus:ring-blue-500 focus:border-blue-500 mt-2.5 font-normal shadow-card;
+    @apply block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-200 focus:ring-primary-500 focus:border-primary-500 mt-2.5 font-normal shadow-card;
   }
 
   .btn {
-    @apply text-white bg-gradient-to-r from-[#00c6ff] to-[#0072ff] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center;
+    @apply text-white bg-gradient-to-r from-[#00c6ff] to-[#0072ff] focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center;
   }
 
   .header {
-    @apply flex justify-between items-center sm:px-16 px-8 py-4 max-w-5xl mx-auto absolute top-0 bg-transparent z-10 right-0 left-0;
+    @apply flex justify-between items-center py-4 px-10 sm:px-20 mx-auto absolute top-0 bg-transparent z-10 right-0 left-0;
   }
 
   .footer {
@@ -66,7 +78,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .neo-btn {
-    @apply py-3 px-6 rounded-lg text-blue-500 text-center font-semibold sm:w-1/2 w-[90%] -bottom-5 absolute mx-auto right-0 left-0 flex justify-center items-center gap-3;
+    @apply py-3 px-6 rounded-lg text-primary-500 text-center font-semibold sm:w-1/2 w-[90%] -bottom-5 absolute mx-auto right-0 left-0 flex justify-center items-center gap-3;
   }
 
   .cta {
@@ -186,7 +198,7 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 .primary-button::after {
-  @apply absolute inset-y-0 left-0 bg-blue-500 z-10 block w-0 h-full;
+  @apply absolute inset-y-0 left-0 bg-primary-500 -z-10 block w-0 h-full;
   content: "";
   transition: all 0.2s linear;
 }
@@ -197,11 +209,21 @@ body:has(.card[data-color="green"]:hover) {
 
 .primary-button {
   display: inline-block;
-  @apply font-semibold flex items-center gap-2 p-3 border-blue-500 border-2 rounded-md text-blue-500  duration-300;
+  @apply font-semibold flex items-center gap-2 p-3 border-primary-500 border-2 rounded-md text-primary-500  duration-300;
 
   &:not([disabled]) {
-    &:hover{
+    &:hover {
       @apply text-white;
     }
   }
+}
+
+.draggable {
+  box-shadow: 54px 20px 60px 54px rgba(255, 255, 255, 0.1) inset;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
