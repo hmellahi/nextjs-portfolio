@@ -14,7 +14,7 @@ export const testimonials = [
     profileImg: "zak.jpeg",
   },
   {
-    name: "Abdelilah LBARDI",
+    name: "Abdelilah Lbardi",
     role: "Senior Software Engineer @Leyton",
     text: "Hamza and I worked in different teams. \n\nHowever, we had the opportunity to exchange about lot of technical challenges throughout my time here at Leyton.\n\nI firmly believe that he can be a good asset to your company in case you're looking for frontend/full-stack engineer with deep experts knowledge of Typescript, React, and Nodejs.",
     link: "https://linkedin.com/in/abdelilahlbardi",

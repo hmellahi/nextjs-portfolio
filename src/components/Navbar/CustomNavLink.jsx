@@ -16,7 +16,7 @@ export default function CustomNavLink({ href, children, isExternal }) {
   return (
     <Link
       href={href}
-      className={`border-2  px-4 py-2 rounded-md text-sm font-semibold md:text-lg  text-primary-500 border-transparent shadow-md
+      className={`border-2  px-4 py-2 rounded-md text-sm font-semibold md:text-lg  text-primary-500 border-transparent shadow-sm
        ${isActive && "bg-white"}
        ${pathname === "/" && "bg-white"}
        `}

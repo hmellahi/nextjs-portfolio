@@ -4,9 +4,14 @@
   align-items: center;
 }
 
-.glassIco-wrapper {
-  overflow: hidden;
+.testimonial-wrapper {
+  position: relative;
+  padding-top: 6rem; /* Half of the profile image height */
+  transition: 200ms;
+}
 
+.testimonial-wrapper:hover {
+  transform: translateY(-20px);
 }
 
 .glassIco {
@@ -19,14 +24,12 @@
   width: 100%;
   height: auto;
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-right-color: rgba(255, 255, 255, 0.1);
   border-bottom-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   @include flex-center;
-  overflow: hidden;
 
   &:before {
     content: "";
@@ -41,7 +44,6 @@
   }
 
   &:hover {
-    transform: translateY(-20px);
     &:before {
       transform: skewX(45deg) translateX(-150%);
     }

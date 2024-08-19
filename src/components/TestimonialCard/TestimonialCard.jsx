@@ -8,21 +8,23 @@ export default function TestimonialCard({ testimonial }) {
   const profileImgUrl = `/assets/testimonials/${profileImg}`;
 
   return (
-    <div className="glassIco rounded-3xl">
+    <div className="testimonial-wrapper relative">
       <ProfileImage link={link} profileImgUrl={profileImgUrl} name={name} />
-      <div className="p-6 mt-20">
-        <h3 className="font-bold text-2xl mb-2 text-center">{name}</h3>
-        <h2 className="text-md mb-2 text-center text-gray-400">{role}</h2>
-        <div className="flex items-center justify-center">
-          <Image
-            className="text-center relative mb-7"
-            src="/assets/icons/quote2.png"
-            width={60}
-            height={60}
-            alt="quote"
-          />
+      <div className="glassIco rounded-3xl relative overflow-hidden !h-full">
+        <div className="p-10 mt-20">
+          <h2 className="font-bold text-2xl mb-2 text-center">{name}</h2>
+          <h3 className="text-md mb-2 text-center text-gray-400">{role}</h3>
+          <div className="flex items-center justify-center">
+            <Image
+              className="text-center relative mb-7"
+              src="/assets/icons/quote2.png"
+              width={60}
+              height={60}
+              alt="quote"
+            />
+          </div>
+          <p className="text-gray-700 text-lg whitespace-pre-line">{text}</p>
         </div>
-        <p className="text-gray-700 text-lg whitespace-pre-line">{text}</p>
       </div>
     </div>
   );
@@ -32,12 +34,12 @@ const ProfileImage = ({ link, profileImgUrl, name }) => {
   if (!profileImgUrl) return null;
 
   const imageComponent = (
-    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+    <div className="absolute top-24 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
       <Image
         src={profileImgUrl}
         alt={name}
-        width={180}
-        height={180}
+        width={160}
+        height={160}
         className="rounded-full shadow-xl"
       />
     </div>

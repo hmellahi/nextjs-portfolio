@@ -17,7 +17,7 @@ export default async function page() {
           draggable={false}
         />
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 mt-28 relative gap-x-10 gap-y-28">
+      <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 mt-10 relative gap-x-10 gap-y-14">
         {testimonials.map((testimonial) => (
           <TestimonialCard testimonial={testimonial} />
         ))}

@@ -3,13 +3,12 @@
 import { cn } from "@/helpers/cn";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { createPortal } from "react-dom";
 import Button from "../Button";
 import MenuToggle from "../MenuToggle/MenuToggle";
 import SocialLinks from "./SocialLinks";
 
 export default function MobileNavbar({ navRoutes }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(!false);
   const pathname = usePathname();
 
   const toggleNavbar = () => {
@@ -18,34 +17,29 @@ export default function MobileNavbar({ navRoutes }) {
 
   const isCurrentRoute = (routeLink) => routeLink === pathname;
 
-  const handleResize = () => {
-    setIsOpen(false)
-  }
+  const closeNavbar = () => {
+    setIsOpen(false);
+  };
 
   useEffect(() => {
-    if (isOpen) {
-      document.body.classList.add("overflow-hidden");
-      document.body.classList.add("w-full");
-    } else {
-      document.body.classList.remove("overflow-hidden");
-    }
-
-    window.addEventListener("resize", handleResize)
+    window.addEventListener("resize", closeNavbar);
+    window.addEventListener("scroll", closeNavbar);
 
     return () => {
-      window.removeEventListener("resize", handleResize)
-    }
+      window.removeEventListener("resize", closeNavbar);
+      window.removeEventListener("scroll", closeNavbar);
+    };
   }, [isOpen]);
 
   return (
     <>
       <button
         onClick={toggleNavbar}
-        className="p-2 bg-primary-500 rounded-xl focus:outline-none block md:hidden z-50"
+        className="p-2 bg-primary-500 rounded-xl focus:outline-none block md:hidden shadow-inner ml-auto z-50"
       >
         <MenuToggle open={isOpen} />
       </button>
-      {(
+      {
         <div className="block md:hidden">
           <nav
             className={cn([
@@ -75,7 +69,7 @@ export default function MobileNavbar({ navRoutes }) {
             <SocialLinks />
           </nav>
         </div>
-      )}
+      }
     </>
   );
 }

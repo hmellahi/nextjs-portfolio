@@ -17,10 +17,10 @@ const navRoutes = [
 
 const Navbar = () => {
   return (
-    <header className="header font-poppins !fixed">
+    <header className="header font-poppins">
       <Link
         href="/"
-        className="z-10 !bg-white p-2 rounded-lg font-poppins font-medium shadow-sm"
+        className="!bg-white p-2 rounded-lg font-poppins font-medium shadow-sm z-50"
       >
         <div className="blue-gradient_text ">
           H<span className="ml-1">M</span>
