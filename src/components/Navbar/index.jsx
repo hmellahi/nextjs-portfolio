@@ -26,7 +26,7 @@ const Navbar = () => {
           H<span className="ml-1">M</span>
         </div>
       </Link>
-      <nav className="md:flex text-lg gap-3 md:gap-7 font-medium font-poppins hidden">
+      <nav className="hidden lg:flex text-lg gap-3 md:gap-7 font-medium font-poppins">
         {navRoutes.map((route) => (
           <CustomNavLink
             key={route.key}
