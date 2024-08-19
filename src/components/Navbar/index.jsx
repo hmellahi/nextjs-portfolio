@@ -17,7 +17,7 @@ const navRoutes = [
 
 const Navbar = () => {
   return (
-    <header className="header font-poppins">
+    <header className="header font-poppins z-20">
       <Link
         href="/"
         className="!bg-white p-2 rounded-lg font-poppins font-medium shadow-sm z-50"

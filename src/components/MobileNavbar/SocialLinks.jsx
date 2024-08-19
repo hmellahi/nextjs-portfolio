@@ -1,3 +1,5 @@
+import { cn } from "@/helpers/cn";
+
 const socialLinks = [
   {
     href: "https://twitter.com/hmellahiii",
@@ -21,9 +23,9 @@ const socialLinks = [
   },
 ];
 
-export default function SocialLinks() {
+export default function SocialLinks({ className }) {
   return (
-    <div className="mt-8 flex space-x-2 absolute bottom-10 left-1/2 transform -translate-x-1/2 justify-center items-center">
+    <div className={cn([className, "flex space-x-2"])}>
       {socialLinks.map((link, index) => (
         <a key={index} href={link.href} target="_blank">
           <link.Icon

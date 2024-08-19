@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Button from "../Button";
 import MenuToggle from "../MenuToggle/MenuToggle";
+import "./MobileNavbar.css";
 import SocialLinks from "./SocialLinks";
 
 export default function MobileNavbar({ navRoutes }) {
@@ -43,17 +44,17 @@ export default function MobileNavbar({ navRoutes }) {
         <div className="block md:hidden">
           <nav
             className={cn([
-              "z-[40] fixed top-0 right-0 w-full h-full bg-white py-20 transform flex justify-center transition-transform duration-700 ease-in-out",
+              "z-[40] fixed top-0 right-0 w-full h-full bg-white py-20 transform flex justify-center transition-transform duration-700 ease-in-out ",
               isOpen ? "translate-x-0" : "translate-x-full",
             ])}
           >
-            <ul className="space-y-4 text-3xl font-bold text-[#1a1a1a] flex justify-center items-center flex-col gap-4">
+            <ul className="space-y-4 text-3xl font-bold text-[#1a1a1a] flex justify-center items-center flex-col gap-2">
               {navRoutes.map((route) => (
                 <li
                   key={route.key}
                   onClick={toggleNavbar}
                   className={cn([
-                    "border-b-4 pb-1 border-transparent hover:border-b-primary-500 duration-300",
+                    " border-animation relative",
                     isCurrentRoute(route.href) && "border-b-primary-500",
                   ])}
                 >
@@ -66,7 +67,7 @@ export default function MobileNavbar({ navRoutes }) {
                 </li>
               ))}
             </ul>
-            <SocialLinks />
+            <SocialLinks className="absolute bottom-10 left-1/2 transform -translate-x-1/2 justify-center items-center" />
           </nav>
         </div>
       }

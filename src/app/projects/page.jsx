@@ -46,7 +46,7 @@ export default async function page() {
                 <p className="mt-4 text-slate-500 whitespace-pre-line	">
                   {project.description}
                 </p>
-                <div className="flex gap-4 mt-5">
+                <div className="flex gap-4 mt-5 flex-wrap">
                   {project?.link && (
                     <Button
                       label="Demo link"
