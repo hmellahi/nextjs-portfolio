@@ -1,11 +1,11 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 
-import { Bird, Island, Plane, Sky } from "@/models";
 import HomeInfo from "./components/HomeInfo";
-import SceneLoader from "./components/sceneLoader";
+import SceneLoader from "./components/SceneLoader";
+import { Bird, Island, Plane, Sky } from "@/models";
 
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -50,70 +50,74 @@ const Home = () => {
   const [islandScale, islandPosition] = adjustIslandForScreenSize();
 
   return (
-    <section className="w-full h-screen relative bg-[#242429]">
+    <section className="w-full h-screen relative bg-[#242429] z-10">
       <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
 
-      {!isLoaded && <SceneLoader className="border-white" />}
+      {/* <div className="flex items-center justify-center w-full h-screen">he</div> */}
 
       <Canvas
-        className={`w-full h-screen bg-transparent ${
+        className={`w-full h-screen bg-transparent z-10 relative ${
           isRotating ? "cursor-grabbing" : "cursor-grab"
         }`}
         camera={{ near: 0.1, far: 1000 }}
         onCreated={() => setIsLoaded(true)}
       >
-        <directionalLight position={[1, 1, 1]} intensity={2} />
-        <ambientLight intensity={0.5} />
-        <pointLight position={[10, 5, 10]} intensity={2} />
-        <spotLight
-          position={[0, 50, 10]}
-          angle={0.15}
-          penumbra={1}
-          intensity={2}
-        />
-        <hemisphereLight
-          skyColor="#b1e1ff"
-          groundColor="#000000"
-          intensity={1}
-        />
+        <Suspense fallback={<SceneLoader className="border-white" />}>
+          <directionalLight position={[1, 1, 1]} intensity={2} />
+          <ambientLight intensity={0.5} />
+          <pointLight position={[10, 5, 10]} intensity={2} />
+          <spotLight
+            position={[0, 50, 10]}
+            angle={0.15}
+            penumbra={1}
+            intensity={2}
+          />
+          <hemisphereLight
+            skyColor="#b1e1ff"
+            groundColor="#000000"
+            intensity={1}
+          />
 
-        <Bird />
-        <Sky isRotating={isRotating} />
-        <Island
-          isRotating={isRotating}
-          setIsRotating={setIsRotating}
-          setCurrentStage={setCurrentStage}
-          position={islandPosition}
-          rotation={[0.1, 4.7077, 0]}
-          scale={islandScale}
-        />
-        <Plane
-          isRotating={isRotating}
-          position={biplanePosition}
-          rotation={[0, 20.1, 0]}
-          scale={biplaneScale}
-        />
+          <Bird />
+          <Sky isRotating={isRotating} />
+          <Island
+            isRotating={isRotating}
+            setIsRotating={setIsRotating}
+            setCurrentStage={setCurrentStage}
+            position={islandPosition}
+            rotation={[0.1, 4.7077, 0]}
+            scale={islandScale}
+          />
+          <Plane
+            isRotating={isRotating}
+            position={biplanePosition}
+            rotation={[0, 20.1, 0]}
+            scale={biplaneScale}
+          />
+        </Suspense>
       </Canvas>
 
       {isLoaded && (
-        <div className="absolute bottom-20 sm:bottom-16 left-[calc(50%-12rem)] text-primary-500 px-3 sm:px-6 py-3 bg-white rounded-md text-xl shadow-lg font-medium flex justify-center items-center gap-2">
-          Rotate right to see other sections
-          <svg
-            fill="currentColor"
-            width="24"
-            height="24"
-            xmlns="http://www.w3.org/2000/svg"
-            fillRule="evenodd"
-            clipRule="evenodd"
-          >
-            <path
-              d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
-              stroke="currentColor"
-              strokeWidth="2"
-            />
-          </svg>
+        <div className="absolute bottom-20 sm:bottom-16 text-primary-500 text-md sm:text-xl font-medium flex justify-center items-center left-0 right-0">
+          <div className="bg-white px-3 sm:px-6 py-3 shadow-lg flex justify-center items-center gap-2 rounded-md">
+            Rotate right to see other sections
+            <svg
+              fill="currentColor"
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              fillRule="evenodd"
+              clipRule="evenodd"
+            >
+              <path
+                d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
+                stroke="currentColor"
+                strokeWidth="2"
+              />
+            </svg>
+          </div>
         </div>
       )}
     </section>

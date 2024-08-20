@@ -64,7 +64,7 @@ export default function MobileNavbar({ navRoutes, onOpenChange, isOpen }) {
             </li>
           ))}
         </ul>
-        <SocialLinks className="absolute bottom-10 left-1/2 transform -translate-x-1/2 justify-center items-center" />
+        <SocialLinks className="absolute bottom-10 left-1/2 transform -translate-x-1/2" />
       </nav>
     </>
   );
