@@ -38,4 +38,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 Contributions and feedback are welcome! Please feel free to create issues or submit pull requests to help improve this project.
 
+## Credits and Acknowledgments
+
+This portfolio is based on the [3D Portfolio project](https://github.com/adrianhajdin/3D_portfolio) by Adrian Hajdin.
+
 ---

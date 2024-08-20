@@ -4,10 +4,12 @@ import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
 
-import { Alert, Loader } from "@/components";
 import Button from "@/components/Button";
+import SocialLinks from "@/components/MobileNavbar/SocialLinks";
 import useAlert from "@/hooks/useAlert";
 import { Fox } from "@/models/Fox";
+import Alert from "@/components/Alert";
+import Loader from "@/components/Loader";
 
 const Contact = () => {
   const formRef = useRef();
@@ -142,6 +144,7 @@ const Contact = () => {
             label={loading ? "Sending..." : "Submit"}
           />
         </form>
+        <SocialLinks className="mt-5" />
       </div>
 
       <div className="lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]">

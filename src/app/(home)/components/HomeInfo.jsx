@@ -9,7 +9,7 @@ const HomeInfo = ({ currentStage }) => {
         Hi, I'm
         <span className="font-semibold mx-2 text-white">Hamza Mellahi</span>
         👋
-        <br />A Front-end Developer from Morocco 🇲🇦
+        <br />A Front-end Engineer from Morocco 🇲🇦
       </h1>
     );
   else if (currentStage === 2) {

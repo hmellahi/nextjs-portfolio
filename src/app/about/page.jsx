@@ -1,7 +1,7 @@
 import CTA from "@/components/CTA";
-import ExperienceTimeline from "@/components/ExperienceTimeline/ExperienceTimeline";
-import Skill from "@/components/Skill";
 import { skills } from "@/constants";
+import ExperienceTimeline from "./components/ExperienceTimeline/ExperienceTimeline";
+import Skill from "./components/Skill";
 
 const About = async () => {
   return (
@@ -17,8 +17,8 @@ const About = async () => {
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p className="mb-2">
-          Front End Developer based in Morocco 🇲🇦 <br /> Specializing in
-          crafting engaging interfaces and optimizing web performance.
+          Front-end Engineer based in Morocco 🇲🇦 <br /> Specializing in crafting
+          engaging interfaces and optimizing web performance.
         </p>
         <video className="rounded-lg my-2 w-full shadow-xl" autoPlay loop muted>
           <source src="/assets/videos/nerd.mp4" type="video/mp4"></source>
@@ -31,7 +31,7 @@ const About = async () => {
 
         <div className="mt-12 flex flex-wrap gap-12">
           {skills.map((skill) => (
-            <Skill skill={skill}></Skill>
+            <Skill skill={skill} />
           ))}
         </div>
       </div>

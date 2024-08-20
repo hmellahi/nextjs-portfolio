@@ -1,6 +1,6 @@
 import Button from "@/components/Button";
 import CTA from "@/components/CTA";
-import ProjectScreenshotsSwiper from "@/components/project-screenshots-swiper/ProjectScreenshotsSwiper";
+import ProjectScreenshotsSwiper from "./components/project-screenshots-swiper/ProjectScreenshotsSwiper";
 import { projects } from "@/constants";
 import { Suspense } from "react";
 
@@ -46,7 +46,7 @@ export default async function page() {
                 <p className="mt-4 text-slate-500 whitespace-pre-line	">
                   {project.description}
                 </p>
-                <div className="flex gap-4 mt-5">
+                <div className="flex gap-4 mt-5 flex-wrap">
                   {project?.link && (
                     <Button
                       label="Demo link"
@@ -61,7 +61,7 @@ export default async function page() {
                       isExternal={true}
                     />
                   )}
-                   {project.articleLink && (
+                  {project.articleLink && (
                     <Button
                       label="Building Process"
                       link={project.articleLink}
@@ -69,16 +69,6 @@ export default async function page() {
                     />
                   )}
                 </div>
-                {/* <div>
-                  {project.articleLink && (
-                    <Button
-                      className={"mt-3"}
-                      label="Building Process"
-                      link={project.articleLink}
-                      isExternal={true}
-                    />
-                  )}
-                </div> */}
               </div>
             </div>
           ))}

@@ -17,10 +17,10 @@ export default function ProjectScreenshotsSwiper({ project, isPriority }) {
   const [swiperInstance, setSwiperInstance] = useState(null);
   const swiperContainerRef = useRef(null);
 
-  const imgProps = [];
+  const imgProps = {};
 
   if (!isPriority) {
-    imgProps.push({ loading: "lazy" });
+    imgProps["loading"] = "lazy";
   }
 
   // Intersection Observer setup
@@ -75,7 +75,6 @@ export default function ProjectScreenshotsSwiper({ project, isPriority }) {
                 src={`/assets/screenshots/${screenshotsFolderRoot}/${screenshot}`}
                 fill
                 priority={isPriority}
-                // sizes="(min-width: 1300px) 583px, (min-width: 1040px) 508px, (min-width: 640px) calc(90vw - 131px), (min-width: 540px) calc(90vw - 74px), (min-width: 400px) calc(105vw - 152px), calc(90vw - 74px)"
                 {...imgProps}
               />
             </div>

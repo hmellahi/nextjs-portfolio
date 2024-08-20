@@ -15,10 +15,10 @@ module.exports = {
           DEFAULT: "#000",
           500: "#1D2235",
         },
-        blue: {
-          500: "#2b77e7",
+        primary:{
           700: "#2f478d",
-        },
+          500: "#2b77e7",
+        }
       },
       fontFamily: {
         poppins: ['var(--font-poppins)'],
