@@ -4,7 +4,7 @@ export const testimonials = [
     role: "Senior Software Engineer @Leyton",
     text: "I had the pleasure of working with Hamza for two years, he is a passionate JavaScript enthusiast and a technophile who quickly adopts new technologies.\n\nHamza demonstrates extreme dedication in his work, fully committed to completing his projects.",
     link: "https://linkedin.com/in/ali-guedda",
-    profileImg: "ali.jpeg",
+    profileImg: "ali2.jpeg",
   },
   {
     name: "Abderrazzak Bajjou",
@@ -13,13 +13,13 @@ export const testimonials = [
     link: "https://www.linkedin.com/in/abderrazzak-bajjou/",
     profileImg: "zak.jpeg",
   },
-  {
-    name: "El Houssain INANI",
-    role: "Staff engineer @Leyton",
-    text: "Hamza is a former classmate with whom I have collaborated on several projects, I highly recommend him and trust his ability to deliver quality work.",
-    link: "https://www.linkedin.com/in/inanielhoussain/",
-    profileImg: "houssain.jpeg",
-  },
+  // {
+  //   name: "El Houssain INANI",
+  //   role: "Staff engineer @Leyton",
+  //   text: "Hamza is a former classmate with whom I have collaborated on several projects, I highly recommend him and trust his ability to deliver quality work.",
+  //   link: "https://www.linkedin.com/in/inanielhoussain/",
+  //   profileImg: "houssain.jpeg",
+  // },
   {
     name: "Abdelilah Lbardi",
     role: "Senior Software Engineer @Leyton",
@@ -37,7 +37,7 @@ export const testimonials = [
   {
     name: "Noura EL Allam",
     role: "Senior Software Engineer @Odoo",
-    text: "Hamza is a former classmate with whom I have collaborated on several projects, I highly recommend him and trust his ability to deliver quality work.",
+    text: "Hamza is a former classmate with whom I have collaborated on several projects.\n I highly recommend him and trust his ability to deliver quality work.",
     link: "https://linkedin.com/in/flaredev",
     profileImg: "noura.jpeg",
   },

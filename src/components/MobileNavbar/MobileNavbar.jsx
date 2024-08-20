@@ -2,24 +2,23 @@
 
 import { cn } from "@/helpers/cn";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Button from "../Button";
 import MenuToggle from "../MenuToggle/MenuToggle";
 import "./MobileNavbar.css";
 import SocialLinks from "./SocialLinks";
 
-export default function MobileNavbar({ navRoutes }) {
-  const [isOpen, setIsOpen] = useState(!false);
+export default function MobileNavbar({ navRoutes, onOpenChange, isOpen }) {
   const pathname = usePathname();
 
   const toggleNavbar = () => {
-    setIsOpen(!isOpen);
+    onOpenChange(!isOpen);
   };
 
   const isCurrentRoute = (routeLink) => routeLink === pathname;
 
   const closeNavbar = () => {
-    setIsOpen(false);
+    onOpenChange(false);
   };
 
   useEffect(() => {
@@ -36,7 +35,7 @@ export default function MobileNavbar({ navRoutes }) {
     <>
       <button
         onClick={toggleNavbar}
-        className="p-2 bg-primary-500 rounded-xl focus:outline-none block lg:hidden shadow-inner ml-auto z-50"
+        className="p-2 bg-primary-500 rounded-lg focus:outline-none block lg:hidden shadow-inner ml-auto z-50"
       >
         <MenuToggle open={isOpen} />
       </button>
@@ -52,8 +51,8 @@ export default function MobileNavbar({ navRoutes }) {
               key={route.key}
               onClick={toggleNavbar}
               className={cn([
-                " border-animation relative",
-                isCurrentRoute(route.href) && "border-b-primary-500",
+                "border-animation relative",
+                isCurrentRoute(route.href) && "text-primary-500",
               ])}
             >
               <Button

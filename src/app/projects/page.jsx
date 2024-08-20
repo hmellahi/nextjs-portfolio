@@ -1,6 +1,6 @@
 import Button from "@/components/Button";
 import CTA from "@/components/CTA";
-import ProjectScreenshotsSwiper from "@/components/project-screenshots-swiper/ProjectScreenshotsSwiper";
+import ProjectScreenshotsSwiper from "./components/project-screenshots-swiper/ProjectScreenshotsSwiper";
 import { projects } from "@/constants";
 import { Suspense } from "react";
 

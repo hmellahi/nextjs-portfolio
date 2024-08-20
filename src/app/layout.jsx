@@ -23,8 +23,8 @@ const isDevelopment = process.env.NODE_ENV === "development";
 
 export default function App({ children }) {
   return (
-    <html lang="en">
-      <body className={`${poppins?.className} bg-slate-300/20 no-scrollbar`}>
+    <html lang="en" className="custom-scroll">
+      <body className={`${poppins?.className} bg-slate-300/20`}>
         {!isDevelopment && (
           <>
             <Script

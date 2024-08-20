@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { useState } from "react";
 import MobileNavbar from "../MobileNavbar/MobileNavbar";
 import CustomNavLink from "./CustomNavLink";
 
@@ -16,13 +18,16 @@ const navRoutes = [
 ];
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="header font-poppins z-20">
       <Link
         href="/"
-        className="!bg-white p-2 rounded-lg font-poppins font-medium shadow-sm z-50"
+        className="!bg-white p-2 rounded-lg font-poppins font-medium shadow-lg z-50"
+        onClick={() => setIsOpen(false)}
       >
-        <div className="blue-gradient_text ">
+        <div className="blue-gradient_text">
           H<span className="ml-1">M</span>
         </div>
       </Link>
@@ -37,7 +42,11 @@ const Navbar = () => {
           </CustomNavLink>
         ))}
       </nav>
-      <MobileNavbar navRoutes={navRoutes} />
+      <MobileNavbar
+        navRoutes={navRoutes}
+        onOpenChange={setIsOpen}
+        isOpen={isOpen}
+      />
     </header>
   );
 };
