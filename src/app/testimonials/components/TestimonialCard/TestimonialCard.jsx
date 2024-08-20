@@ -36,8 +36,8 @@ const ProfileImage = ({ link, profileImgUrl, name }) => {
   const imageComponent = (
     <div className="absolute top-24 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
       <Image
+        alt={`${name}'s profile picture`}
         src={profileImgUrl}
-        alt={name}
         width={160}
         height={160}
         className="rounded-full shadow-xl"
@@ -46,7 +46,12 @@ const ProfileImage = ({ link, profileImgUrl, name }) => {
   );
 
   return link ? (
-    <Link target="_blank" href={link}>
+    <Link
+      target="_blank"
+      href={link}
+      rel="noopener"
+      aria-label={`Link to ${name}'s profile`}
+    >
       {imageComponent}
     </Link>
   ) : (

@@ -27,7 +27,7 @@ const Navbar = () => {
         className="!bg-white p-2 rounded-lg font-poppins font-medium shadow-[inset_0_0px_4px_rgba(0,0,0,0.1)] z-50"
         onClick={() => setIsOpen(false)}
       >
-        <div className="blue-gradient_text">
+        <div className="blue-gradient_text text-lg">
           H<span className="ml-1">M</span>
         </div>
       </Link>
