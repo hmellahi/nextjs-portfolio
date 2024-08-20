@@ -9,7 +9,7 @@ export const testimonials = [
   {
     name: "Abderrazzak Bajjou",
     role: "ML Engineer | Blockchain Enthusiast",
-    text: "Hamza Mellahi co-founded FileQA with me, serving as our full-stack developer.\nHe skillfully built both the front-end and back-end of the platform, ensuring a seamless user experience. \nAlways available and easy to work with, Hamza's dedication and technical expertise were critical to our success.\nI highly recommend him for any future endeavors.",
+    text: "Hamza Mellahi co-founded FileQA with me, serving as our full-stack developer.\n\nHe skillfully built both the front-end and back-end of the platform, ensuring a seamless user experience. \nAlways available and easy to work with, Hamza's dedication and technical expertise were critical to our success.\n\nI highly recommend him for any future endeavors.",
     link: "https://www.linkedin.com/in/abderrazzak-bajjou/",
     profileImg: "zak.jpeg",
   },
@@ -37,7 +37,7 @@ export const testimonials = [
   {
     name: "Noura EL Allam",
     role: "Senior Software Engineer @Odoo",
-    text: "Hamza is a former classmate with whom I have collaborated on several projects.\n I highly recommend him and trust his ability to deliver quality work.",
+    text: "Hamza is a former classmate with whom I have collaborated on several projects.\n\nI highly recommend him and trust his ability to deliver quality work.",
     link: "https://linkedin.com/in/flaredev",
     profileImg: "noura.jpeg",
   },
