@@ -51,7 +51,7 @@ const Home = () => {
 
   return (
     <section className="w-full h-screen relative bg-[#242429] z-10">
-      <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
+      <div className="absolute top-28 left-0 right-0 z-20 flex items-center justify-center">
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
 
@@ -98,7 +98,7 @@ const Home = () => {
       </Canvas>
 
       {isLoaded && (
-        <div className="absolute bottom-20 sm:bottom-16 text-primary-500 text-md sm:text-xl font-medium flex justify-center items-center left-0 right-0">
+        <div className="absolute bottom-20 sm:bottom-16 text-primary-500 text-md sm:text-xl font-medium flex justify-center items-center left-0 right-0 z-10">
           <div className="bg-white px-3 sm:px-6 py-3 shadow-lg flex justify-center items-center gap-2 rounded-md">
             Rotate right to see other sections
             <svg
