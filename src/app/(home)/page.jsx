@@ -3,9 +3,9 @@
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useState } from "react";
 
+import { Bird, Island, Plane, Sky } from "@/models";
 import HomeInfo from "./components/HomeInfo";
 import SceneLoader from "./components/SceneLoader";
-import { Bird, Island, Plane, Sky } from "@/models";
 
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -54,8 +54,6 @@ const Home = () => {
       <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
-
-      {/* <div className="flex items-center justify-center w-full h-screen">he</div> */}
 
       <Canvas
         className={`w-full h-screen bg-transparent z-10 relative ${
