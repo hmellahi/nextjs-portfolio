@@ -16,7 +16,7 @@ export const testimonials = [
   // {
   //   name: "El Houssain INANI",
   //   role: "Staff engineer @Leyton",
-  //   text: "Hamza is a former classmate with whom I have collaborated on several projects, I highly recommend him and trust his ability to deliver quality work.",
+  //   text: "",
   //   link: "https://www.linkedin.com/in/inanielhoussain/",
   //   profileImg: "houssain.jpeg",
   // },
@@ -44,7 +44,7 @@ export const testimonials = [
   // {
   //   name: "Marwane Chaoui",
   //   role: "Sr. Software Engineer @Leyton | PHP / Node.js",
-  //   text: "Hamza is a former classmate with whom I have collaborated on several projects, I highly recommend him and trust his ability to deliver quality work.",
+  //   text: "",
   //   link: "https://www.linkedin.com/in/moghwan/",
   //   profileImg: "marwane.jpeg",
   // },
