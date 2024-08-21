@@ -7,18 +7,25 @@
 .testimonial-wrapper {
   position: relative;
   padding-top: 6rem; /* Half of the profile image height */
-  transition: 300ms;
+  transition: 1000ms;
+
+  &:hover {
+    transform: translateY(-20px);
+
+    .glassIco {
+      &:before {
+        transform: skewX(45deg) translateX(-150%);
+      }
+    }
+  }
 }
 
-.testimonial-wrapper:hover {
-  transform: translateY(-20px);
-}
 
 .glassIco {
   &,
   & * {
     box-sizing: border-box;
-    transition: 300ms;
+    transition: 1000ms;
   }
 
   width: 100%;
@@ -35,14 +42,8 @@
     height: 100%;
     background: rgba(255, 255, 255, 0.5);
     filter: blur(0px);
-    transition: 400ms;
+    transition: 800ms;
     transform: skewX(45deg) translateX(280%);
-  }
-
-  &:hover {
-    &:before {
-      transform: skewX(45deg) translateX(-150%);
-    }
   }
 
   & > * {
