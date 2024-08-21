@@ -1,21 +1,17 @@
 import {
-  car,
   contact,
-  estate,
   github,
   javascript,
   linkedin,
+  nestjs,
   nextjs,
   nodejs,
-  nestjs,
   postgres,
   prisma,
   react,
   redux,
-  snapgram,
   tailwindcss,
-  threads,
-  typescript
+  typescript,
 } from "@@/assets/icons";
 import { fileqa, leytonLogo } from "@@/assets/images";
 
@@ -118,7 +114,7 @@ export const experiences = [
     icon: fileqa,
     iconBg: "#eb6655",
     date: "May 2023 - Jul 2023",
-    url: "https://fileqa.com/", 
+    url: "https://fileqa.com/",
     points: [
       "We have developed a SaaS platform where users can ask questions about their documents or books and immediately receive precise and reliable answers.",
       "Helped over 100 users get instant insights from their documents.",
@@ -148,7 +144,6 @@ export const socialLinks = [
 
 export const projects = [
   {
-    iconUrl: fileqa,
     theme: "btn-back-red",
     name: "Behavewise (STOPPED)",
     description:
@@ -160,12 +155,12 @@ export const projects = [
     screenshots: ["landing-page.png", "interview.jpg", "feedback.png"],
   },
   {
-    iconUrl: fileqa,
     theme: "btn-back-red",
     name: "FileQA",
     description:
       "We have developed an interactive platform where users can ask questions about their documents or books and immediately receive precise and reliable answers.",
-    articleLink:"https://blog.hmellahi.me/my-journey-of-building-our-first-saas-product",
+    articleLink:
+      "https://blog.hmellahi.me/my-journey-of-building-our-first-saas-product",
     link: "https://fileqa.com/",
     screenshotsFolderRoot: "file-qa",
     screenshots: [
@@ -176,7 +171,6 @@ export const projects = [
     ],
   },
   {
-    iconUrl: threads,
     theme: "btn-back-green",
     name: "TwitMate",
     description:
@@ -184,8 +178,6 @@ export const projects = [
     repoLink: "https://github.com/hmellahi/Twitter-Clone",
     screenshotsFolderRoot: "twitter",
     screenshots: [
-      // "feed.png",
-      // "feed-with-tab-open.png",
       "profile.png",
       "community.png",
       "community-members.png",
@@ -193,7 +185,6 @@ export const projects = [
     ],
   },
   {
-    iconUrl: car,
     theme: "btn-back-blue",
     name: "Matcha 🔥 🔥 ",
     description:
@@ -203,7 +194,6 @@ export const projects = [
     screenshots: ["login.png", "feed.jpg", "profile.png", "settings.png"],
   },
   {
-    iconUrl: snapgram,
     theme: "btn-back-pink",
     name: "Pink Pong",
     description:
@@ -219,7 +209,6 @@ export const projects = [
     ],
   },
   {
-    iconUrl: estate,
     theme: "btn-back-black",
     name: "CUBE 3D",
     description:

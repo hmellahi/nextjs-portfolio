@@ -17,12 +17,6 @@ export default function ProjectScreenshotsSwiper({ project, isPriority }) {
   const [swiperInstance, setSwiperInstance] = useState(null);
   const swiperContainerRef = useRef(null);
 
-  const imgProps = {};
-
-  if (!isPriority) {
-    imgProps["loading"] = "lazy";
-  }
-
   // Intersection Observer setup
   useEffect(() => {
     const swiperContainer = swiperContainerRef.current;
@@ -75,7 +69,6 @@ export default function ProjectScreenshotsSwiper({ project, isPriority }) {
                 src={`/assets/screenshots/${screenshotsFolderRoot}/${screenshot}`}
                 fill
                 priority={isPriority}
-                {...imgProps}
               />
             </div>
           </SwiperSlide>

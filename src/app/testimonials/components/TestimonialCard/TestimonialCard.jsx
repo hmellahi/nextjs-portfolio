@@ -2,14 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import "./TestimonialCard.css";
 
-export default function TestimonialCard({ testimonial }) {
+export default function TestimonialCard({ testimonial, lazyLoadProfileImg }) {
   const { name, text, role, profileImg = "default.jpg", link } = testimonial;
 
   const profileImgUrl = `/assets/testimonials/${profileImg}`;
 
   return (
     <div className="testimonial-wrapper relative">
-      <ProfileImage link={link} profileImgUrl={profileImgUrl} name={name} />
+      <ProfileImage
+        link={link}
+        profileImgUrl={profileImgUrl}
+        name={name}
+        priority={!lazyLoadProfileImg}
+      />
       <div className="glassIco rounded-3xl relative overflow-hidden shadow-md">
         <div className="p-10 mt-20">
           <h2 className="font-bold text-2xl mb-2 text-center">{name}</h2>
@@ -30,7 +35,7 @@ export default function TestimonialCard({ testimonial }) {
   );
 }
 
-const ProfileImage = ({ link, profileImgUrl, name }) => {
+const ProfileImage = ({ link, profileImgUrl, name, priority }) => {
   if (!profileImgUrl) return null;
 
   const imageComponent = (
@@ -41,6 +46,7 @@ const ProfileImage = ({ link, profileImgUrl, name }) => {
         width={160}
         height={160}
         className="rounded-full shadow-xl"
+        priority={priority}
       />
     </div>
   );

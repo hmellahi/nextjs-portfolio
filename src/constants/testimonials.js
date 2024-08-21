@@ -16,7 +16,7 @@ export const testimonials = [
   {
     name: "El Houssain INANI",
     role: "Staff engineer @Leyton",
-    text: "I worked with Hamza in different projects and in different environments, and he managed to bring brilliant ideas to deliver a valuable product.\n\n Hamza is excellent in the frontend area, but also he is not intimidated by backend concepts.\n In fact, he solved many issues related to that. Having him on your team is a big advantage.",
+    text: "I worked with Hamza in different projects and in different teams, and he managed to bring brilliant ideas to deliver a valuable product.\n\n He is excellent in the frontend area, but also he isn't intimidated by backend concepts.\n In fact, he solved many issues related to that. Having him on your team is a big advantage.",
     link: "https://www.linkedin.com/in/inanielhoussain/",
     profileImg: "houssain.jpeg",
   },

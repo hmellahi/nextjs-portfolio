@@ -8,8 +8,12 @@ export default async function page() {
         Happy Colleagues 😎
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 mt-10 relative gap-x-10 gap-y-14">
-        {testimonials.map((testimonial) => (
-          <TestimonialCard testimonial={testimonial} />
+        {testimonials.map((testimonial, index) => (
+          <TestimonialCard
+            testimonial={testimonial}
+            key={index}
+            lazyLoadProfileImg={index > 2}
+          />
         ))}
       </div>
     </section>
