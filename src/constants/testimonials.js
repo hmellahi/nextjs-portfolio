@@ -36,18 +36,11 @@ export const testimonials = [
   },
   {
     name: "Noura EL Allam",
-    role: "Senior Software Engineer @Odoo",
+    role: "Software Engineer @Odoo",
     text: "Hamza is a former classmate with whom I have collaborated on several projects.\n\nI highly recommend him and trust his ability to deliver quality work.",
     link: "https://linkedin.com/in/flaredev",
     profileImg: "noura.jpeg",
   },
-  // {
-  //   name: "Marwane Chaoui",
-  //   role: "Sr. Software Engineer @Leyton | PHP / Node.js",
-  //   text: "",
-  //   link: "https://www.linkedin.com/in/moghwan/",
-  //   profileImg: "marwane.jpeg",
-  // },
   {
     name: "Te-Chia Yu",
     role: "Founder @PostSale",

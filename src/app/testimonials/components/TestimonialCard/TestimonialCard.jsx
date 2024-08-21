@@ -17,7 +17,7 @@ export default function TestimonialCard({ testimonial }) {
           <div className="flex items-center justify-center">
             <Image
               className="text-center relative mb-7"
-              src="/assets/icons/quote2.png"
+              src="/assets/icons/quote.png"
               width={60}
               height={60}
               alt="quote"
