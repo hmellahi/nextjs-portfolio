@@ -10,7 +10,7 @@ export default function TestimonialCard({ testimonial }) {
   return (
     <div className="testimonial-wrapper relative">
       <ProfileImage link={link} profileImgUrl={profileImgUrl} name={name} />
-      <div className="glassIco rounded-3xl relative overflow-hidden shadow-lg">
+      <div className="glassIco rounded-3xl relative overflow-hidden shadow-md">
         <div className="p-10 mt-20">
           <h2 className="font-bold text-2xl mb-2 text-center">{name}</h2>
           <h3 className="text-md mb-2 text-center text-gray-400">{role}</h3>
