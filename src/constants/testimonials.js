@@ -4,7 +4,7 @@ export const testimonials = [
     role: "Senior Software Engineer @Leyton",
     text: "I had the pleasure of working with Hamza for two years, he is a passionate JavaScript enthusiast and a technophile who quickly adopts new technologies.\n\nHamza demonstrates extreme dedication in his work, fully committed to completing his projects.",
     link: "https://linkedin.com/in/ali-guedda",
-    profileImg: "ali2.jpeg",
+    profileImg: "ali.jpeg",
   },
   {
     name: "Abderrazzak Bajjou",
@@ -13,13 +13,13 @@ export const testimonials = [
     link: "https://www.linkedin.com/in/abderrazzak-bajjou/",
     profileImg: "zak.jpeg",
   },
-  // {
-  //   name: "El Houssain INANI",
-  //   role: "Staff engineer @Leyton",
-  //   text: "Hamza is a former classmate with whom I have collaborated on several projects, I highly recommend him and trust his ability to deliver quality work.",
-  //   link: "https://www.linkedin.com/in/inanielhoussain/",
-  //   profileImg: "houssain.jpeg",
-  // },
+  {
+    name: "El Houssain INANI",
+    role: "Staff engineer @Leyton",
+    text: "I worked with Hamza in different projects and in different environments, and he managed to bring brilliant ideas to deliver a valuable product.\n\n Hamza is excellent in the frontend area, but also he is not intimidated by backend concepts.\n In fact, he solved many issues related to that. Having him on your team is a big advantage.",
+    link: "https://www.linkedin.com/in/inanielhoussain/",
+    profileImg: "houssain.jpeg",
+  },
   {
     name: "Abdelilah Lbardi",
     role: "Senior Software Engineer @Leyton",
@@ -44,7 +44,7 @@ export const testimonials = [
   // {
   //   name: "Marwane Chaoui",
   //   role: "Sr. Software Engineer @Leyton | PHP / Node.js",
-  //   text: "Hamza is a former classmate with whom I have collaborated on several projects, I highly recommend him and trust his ability to deliver quality work.",
+  //   text: "",
   //   link: "https://www.linkedin.com/in/moghwan/",
   //   profileImg: "marwane.jpeg",
   // },
