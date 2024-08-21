@@ -71,7 +71,7 @@ export default function ProjectScreenshotsSwiper({ project, isPriority }) {
             <div className="rounded-sm w-full h-full shadow-lg card">
               <Image
                 alt={name}
-                className="rounded-2xl w-full h-auto !border-0 p-2 object-coDver"
+                className="rounded-2xl w-full h-auto !border-0 p-2"
                 src={`/assets/screenshots/${screenshotsFolderRoot}/${screenshot}`}
                 fill
                 priority={isPriority}
