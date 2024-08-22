@@ -191,7 +191,7 @@ export const projects = [
       "Inspired by Tinder, this website lets users find potential matches based on shared interests and location",
     repoLink: "https://github.com/hmellahi/Tinder-Clone",
     screenshotsFolderRoot: "tinder",
-    screenshots: ["login.png", "feed.jpg", "profile.png", "settings.png"],
+    screenshots: ["login.png", "feed.jpg", "settings.png"],
   },
   {
     theme: "btn-back-pink",
