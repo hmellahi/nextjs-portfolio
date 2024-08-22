@@ -15,7 +15,7 @@ export default function TestimonialCard({ testimonial, lazyLoadProfileImg }) {
         name={name}
         priority={!lazyLoadProfileImg}
       />
-      <div className="glassIco rounded-3xl relative overflow-hidden shadow-md">
+      <div className="glassIco rounded-3xl relative border-2 overflow-hidden">
         <div className="p-10 mt-20">
           <h2 className="font-bold text-2xl mb-2 text-center">{name}</h2>
           <h3 className="text-md mb-2 text-center text-gray-400">{role}</h3>
@@ -28,7 +28,9 @@ export default function TestimonialCard({ testimonial, lazyLoadProfileImg }) {
               alt="quote"
             />
           </div>
-          <p className="text-gray-700 text-lg whitespace-pre-line">{text}</p>
+          <p className="text-gray-700 text-lg text-justify whitespace-pre-line">
+            {text}
+          </p>
         </div>
       </div>
     </div>
