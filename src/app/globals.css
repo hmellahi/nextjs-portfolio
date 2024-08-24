@@ -7,8 +7,8 @@
 }
 
 .custom-scroll {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none; 
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
 }
 
 :root {
@@ -19,6 +19,9 @@
 body {
   /* font-family: "Work Sans", sans-serif; */
   @apply font-poppins;
+  transition-property: opacity, background, transform, filter;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
 }
 
 body:has(.card[data-color="blue"]:hover) {
@@ -205,4 +208,11 @@ body:has(.card[data-color="green"]:hover) {
       @apply text-white;
     }
   }
+}
+
+.page-transition {
+  opacity: 0;
+  background: white;
+  transform: translateY(40px);
+  filter: blur(12px);
 }

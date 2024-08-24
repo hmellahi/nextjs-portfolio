@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import MobileNavbar from "../MobileNavbar/MobileNavbar";
 import CustomNavLink from "./CustomNavLink";
+import TransitionLink from "./TransitionLink";
 
 const navRoutes = [
   { key: "about", href: "/about", label: "About" },
@@ -32,15 +33,14 @@ const Navbar = () => {
         </div>
       </Link>
       <nav className="hidden lg:flex text-lg gap-3 md:gap-7 font-medium font-poppins">
-        {navRoutes.map((route) => (
-          <CustomNavLink
-            key={route.key}
-            href={route.href}
-            isExternal={!!route.isExternal}
-          >
-            {route.label}
-          </CustomNavLink>
-        ))}
+        {navRoutes.map((route) => {
+          const { key, href, isExternal, label } = route;
+          return (
+            <TransitionLink key={key} href={href} isExternal={!!isExternal}>
+              {label}
+            </TransitionLink>
+          );
+        })}
       </nav>
       <MobileNavbar
         navRoutes={navRoutes}
