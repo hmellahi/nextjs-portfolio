@@ -4,12 +4,12 @@ import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
 
+import Alert from "@/components/Alert";
 import Button from "@/components/Button";
+import Loader from "@/components/Loader";
 import SocialLinks from "@/components/MobileNavbar/SocialLinks";
 import useAlert from "@/hooks/useAlert";
 import { Fox } from "@/models/Fox";
-import Alert from "@/components/Alert";
-import Loader from "@/components/Loader";
 
 const Contact = () => {
   const formRef = useRef();
@@ -34,55 +34,50 @@ const Contact = () => {
     setLoading(true);
     setCurrentAnimation("hit");
 
-    // emailjs
-    //   .send(
-    //     emailJSServiceId,
-    //     emailJSTemplateId,
-    //     {
-    //       from_name: form.name,
-    //       to_name: "Hamza Mellahi",
-    //       from_email: form.email,
-    //       to_email: "hamzasenpai307@gmail.com",
-    //       message: form.message,
-    //     },
-    //     emailJSPublicKey
-    //   )
-    //   .then(
-    //     () => {
-    //       setLoading(false);
-    //       showAlert({
-    //         show: true,
-    //         text: "Thank you for your message 😃",
-    //         type: "success",
-    //       });
+    emailjs
+      .send(
+        emailJSServiceId,
+        emailJSTemplateId,
+        {
+          from_name: form.name,
+          to_name: "Hamza Mellahi",
+          from_email: form.email,
+          to_email: "hamzasenpai307@gmail.com",
+          message: form.message,
+        },
+        emailJSPublicKey
+      )
+      .then(
+        () => {
+          setLoading(false);
+          showAlert({
+            show: true,
+            text: "Thank you for your message 😃",
+            type: "success",
+          });
 
-    //       setTimeout(() => {
-    //         hideAlert(false);
-    //         setCurrentAnimation("idle");
-    //         setForm({
-    //           name: "",
-    //           email: "",
-    //           message: "",
-    //         });
-    //       }, [3000]);
-    //     },
-    //     (error) => {
-    //       setLoading(false);
-    //       console.error(error);
-    //       setCurrentAnimation("idle");
-
-    //       showAlert({
-    //         show: true,
-    //         text: "I didn't receive your message 😢",
-    //         type: "danger",
-    //       });
-    //     }
-    //   );
-    showAlert({
-              show: true,
-              text: "Thank you for your message 😃",
-              type: "success",
+          setTimeout(() => {
+            hideAlert(false);
+            setCurrentAnimation("idle");
+            setForm({
+              name: "",
+              email: "",
+              message: "",
             });
+          }, [3000]);
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+          setCurrentAnimation("idle");
+
+          showAlert({
+            show: true,
+            text: "I didn't receive your message 😢",
+            type: "danger",
+          });
+        }
+      );
   };
 
   return (
