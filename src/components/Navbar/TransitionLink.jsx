@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/helpers/cn";
+import { sleep } from "@/helpers/sleep";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 
@@ -15,10 +16,13 @@ export default function TransitionLink({ href, children, isExternal }) {
     extraProps["target"] = "_blank";
   }
 
-  const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
   const handleOnClick = async (e) => {
     e.preventDefault();
+
+    // check if same page...
+    if (pathname === href) {
+      return;
+    }
 
     const body = document.querySelector("body");
     body?.classList.add("page-transition");
@@ -33,7 +37,7 @@ export default function TransitionLink({ href, children, isExternal }) {
     <Link
       href={href}
       className={cn(
-        "border-[1px] px-4 py-2 rounded-md text-sm font-semibold md:text-lg  text-primary-500 shadow-sm",
+        "px-4 py-2 rounded-md text-sm font-semibold md:text-lg  text-primary-500 shadow-sm",
         isActive && "bg-white",
         pathname === "/" && "bg-white border-transparent"
       )}

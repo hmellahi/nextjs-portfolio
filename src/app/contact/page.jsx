@@ -34,50 +34,55 @@ const Contact = () => {
     setLoading(true);
     setCurrentAnimation("hit");
 
-    emailjs
-      .send(
-        emailJSServiceId,
-        emailJSTemplateId,
-        {
-          from_name: form.name,
-          to_name: "Hamza Mellahi",
-          from_email: form.email,
-          to_email: "hamzasenpai307@gmail.com",
-          message: form.message,
-        },
-        emailJSPublicKey
-      )
-      .then(
-        () => {
-          setLoading(false);
-          showAlert({
-            show: true,
-            text: "Thank you for your message 😃",
-            type: "success",
-          });
+    // emailjs
+    //   .send(
+    //     emailJSServiceId,
+    //     emailJSTemplateId,
+    //     {
+    //       from_name: form.name,
+    //       to_name: "Hamza Mellahi",
+    //       from_email: form.email,
+    //       to_email: "hamzasenpai307@gmail.com",
+    //       message: form.message,
+    //     },
+    //     emailJSPublicKey
+    //   )
+    //   .then(
+    //     () => {
+    //       setLoading(false);
+    //       showAlert({
+    //         show: true,
+    //         text: "Thank you for your message 😃",
+    //         type: "success",
+    //       });
 
-          setTimeout(() => {
-            hideAlert(false);
-            setCurrentAnimation("idle");
-            setForm({
-              name: "",
-              email: "",
-              message: "",
+    //       setTimeout(() => {
+    //         hideAlert(false);
+    //         setCurrentAnimation("idle");
+    //         setForm({
+    //           name: "",
+    //           email: "",
+    //           message: "",
+    //         });
+    //       }, [3000]);
+    //     },
+    //     (error) => {
+    //       setLoading(false);
+    //       console.error(error);
+    //       setCurrentAnimation("idle");
+
+    //       showAlert({
+    //         show: true,
+    //         text: "I didn't receive your message 😢",
+    //         type: "danger",
+    //       });
+    //     }
+    //   );
+    showAlert({
+              show: true,
+              text: "Thank you for your message 😃",
+              type: "success",
             });
-          }, [3000]);
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-          setCurrentAnimation("idle");
-
-          showAlert({
-            show: true,
-            text: "I didn't receive your message 😢",
-            type: "danger",
-          });
-        }
-      );
   };
 
   return (
@@ -131,6 +136,7 @@ const Contact = () => {
               onChange={handleChange}
               onFocus={handleFocus}
               onBlur={handleBlur}
+              required
             />
           </label>
 
@@ -141,7 +147,7 @@ const Contact = () => {
             disabled={loading}
             onFocus={handleFocus}
             onBlur={handleBlur}
-            label={loading ? "Sending..." : "Submit"}
+            label={loading ? "Sending..." : "Send"}
           />
         </form>
         <SocialLinks className="mt-5" />

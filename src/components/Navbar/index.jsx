@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useState } from "react";
 import MobileNavbar from "../MobileNavbar/MobileNavbar";
 import CustomNavLink from "./CustomNavLink";
-import TransitionLink from "./TransitionLink";
 
 const navRoutes = [
   { key: "about", href: "/about", label: "About" },
@@ -36,9 +35,9 @@ const Navbar = () => {
         {navRoutes.map((route) => {
           const { key, href, isExternal, label } = route;
           return (
-            <TransitionLink key={key} href={href} isExternal={!!isExternal}>
+            <CustomNavLink key={key} href={href} isExternal={!!isExternal}>
               {label}
-            </TransitionLink>
+            </CustomNavLink>
           );
         })}
       </nav>
