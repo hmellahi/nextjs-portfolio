@@ -9,7 +9,7 @@ export const testimonials = [
   {
     name: "Abderrazzak Bajjou",
     role: "ML Engineer | Blockchain Enthusiast",
-    text: "Hamza Mellahi co-founded FileQA with me, serving as our full-stack developer.\n\nHe skillfully built both the front-end and back-end of the platform, ensuring a seamless user experience.\n\nAlways available and easy to work with, Hamza's dedication and technical expertise were critical to our success.\n\nI highly recommend him for any future endeavors.",
+    text: "Hamza Mellahi co-founded FileQA with me, serving as our full-stack developer.\n\nHe skillfully built both the front-end and back-end of the platform, ensuring a seamless user experience.\n\nAlways available and easy to work with, I highly recommend him for any future endeavors.",
     link: "https://www.linkedin.com/in/abderrazzak-bajjou/",
     profileImg: "zak.jpeg",
   },
