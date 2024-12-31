@@ -184,15 +184,15 @@ export const projects = [
       "sign-up.png",
     ],
   },
-  {
-    theme: "btn-back-blue",
-    name: "Matcha 🔥 🔥 ",
-    description:
-      "Inspired by Tinder, this website lets users find potential matches based on shared interests and location",
-    repoLink: "https://github.com/hmellahi/Tinder-Clone",
-    screenshotsFolderRoot: "tinder",
-    screenshots: ["login.png", "feed.jpg", "settings.png"],
-  },
+  // {
+  //   theme: "btn-back-blue",
+  //   name: "Matcha 🔥 🔥 ",
+  //   description:
+  //     "Inspired by Tinder, this website lets users find potential matches based on shared interests and location",
+  //   repoLink: "https://github.com/hmellahi/Tinder-Clone",
+  //   screenshotsFolderRoot: "tinder",
+  //   screenshots: ["login.png", "feed.jpg", "settings.png"],
+  // },
   {
     theme: "btn-back-pink",
     name: "Pink Pong",
