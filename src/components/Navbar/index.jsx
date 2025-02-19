@@ -10,7 +10,7 @@ const navRoutes = [
   { key: "testimonials", href: "/testimonials", label: "Testimonials" },
   {
     key: "blog",
-    href: "https://blog.hmellahi.me/",
+    href: "https://frontwizards.com/blog",
     label: "Blog",
     isExternal: true,
   },
