@@ -105,7 +105,7 @@ export const experiences = [
     url: "https://www.linkedin.com/company/leyton/",
     points: [
       "Introduced micro frontends, enabling a seamless transition to new technologies while maintaining ongoing feature development.",
-      "In 3 months, we improved the document-sharing feature performance by 400% through technology migration and made it similar to Google Drive.",
+      "In 3 months, we improved the document-sharing feature performance by +200% through technology migration and made it similar to Google Drive. (Proof of concept)"
     ],
   },
   {
