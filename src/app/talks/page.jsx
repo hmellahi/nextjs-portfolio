@@ -9,15 +9,10 @@ const talks = [
     description: "A talk about frontend engineering",
     date: "2024-03-29",
     duration: "3:20:00",
-    url: "https://www.youtube.com/watch?v=0C010HLGVRc",
   },
 ];
 
 export default function TalksPage() {
-  const getThumbnailUrl = (videoId) => {
-    return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
-  };
-
   return (
     <div className="!mx-0 max-container !max-w-none">
       <h1 className="head-text font-bold flex items-center justify-center">
@@ -37,8 +32,9 @@ export default function TalksPage() {
             key={talk.id}
           >
             <Link
-              href={talk.url}
+              href={getVideoUrl(talk.id)}
               className="group hover:transform hover:scale-[1.02] transition-all duration-200 block"
+              target="_blank"
             >
               <div className="bg-white rounded-lg overflow-hidden shadow-lg">
                 <div className="relative aspect-video">
@@ -72,3 +68,11 @@ export default function TalksPage() {
     </div>
   );
 }
+
+const getThumbnailUrl = (videoId) => {
+  return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+};
+
+const getVideoUrl = (videoId) => {
+  return `https://www.youtube.com/watch?v=${videoId}`;
+};
