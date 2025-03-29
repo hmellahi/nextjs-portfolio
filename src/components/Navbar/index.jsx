@@ -7,6 +7,7 @@ import CustomNavLink from "./CustomNavLink";
 const navRoutes = [
   { key: "about", href: "/about", label: "About" },
   { key: "projects", href: "/projects", label: "Projects" },
+  { key: "talks", href: "/talks", label: "Talks" },
   { key: "testimonials", href: "/testimonials", label: "Testimonials" },
   {
     key: "blog",
