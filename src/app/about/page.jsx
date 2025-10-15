@@ -35,7 +35,7 @@ const About = async () => {
           ))}
         </div>
       </div>
-
+{/* 
       <div className="py-16">
         <h3 className="subhead-text">Work Experience.</h3>
         <div className="mt-5 flex flex-col gap-3 text-slate-500">
@@ -43,12 +43,12 @@ const About = async () => {
             My experience at Leyton and FileQA honed my skills, collaborating
             with talented teammates. Here's the rundown:
           </p>
-        </div>
+        </div> */}
 
-        <div className="mt-12 flex">
-          <ExperienceTimeline />
-        </div>
-      </div>
+        {/* <div className="mt-12 flex"> */}
+          {/* <ExperienceTimeline /> */}
+        {/* </div> */}
+      {/* </div> */}
 
       <hr className="border-slate-200" />
 

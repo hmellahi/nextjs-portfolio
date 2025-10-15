@@ -70,58 +70,14 @@ export const skills = [
 
 export const experiences = [
   {
-    title: "Intermediate Full-stack Developer",
+    title: "Frontend Engineer",
     company_name: "Leyton",
+    points: [
+      "Developed and maintained the frontend of the company's website",
+      "Worked on the company's mobile app",
+    ],
     icon: leytonLogo,
-    iconBg: "#509cd1",
-    date: "Aug 2023",
-    url: "https://www.linkedin.com/company/leyton/",
-    points: [
-      "Conducted front-end code reviews.",
-      "Developed the front-end interface for an AI-powered reporting platform, empowering users to generate technical reports in minutes, instead of manual writing in days.",
-      "Integrated payments into an application and implemented robust security measures to safeguard it against breaches.",
-    ],
-  },
-  {
-    title: "Associate Full-stack Developer",
-    company_name: "Leyton",
-    icon: leytonLogo,
-    iconBg: "#509cd1",
-    date: "Aug 2022 - Jul 2023",
-    url: "https://www.linkedin.com/company/leyton/",
-    points: [
-      "Contributed to the development of an innovative digital platform that empowers businesses in the USA to file for Employee Retention.",
-      "Collaborated on a production consulting platform, delivering new features and bug fixes.",
-      "Identified and resolved critical vulnerabilities, enhancing platform security.",
-      "Implemented unit tests.",
-    ],
-  },
-  {
-    title: "Software Engineer Intern",
-    company_name: "Leyton",
-    icon: leytonLogo,
-    iconBg: "#eb6655",
-    date: "May 2022 - Jul 2022",
-    url: "https://www.linkedin.com/company/leyton/",
-    points: [
-      "Introduced micro frontends, enabling a seamless transition to new technologies while maintaining ongoing feature development.",
-      "In 3 months, we improved the document-sharing feature performance by +200% through technology migration and made it similar to Google Drive. (Proof of concept)"
-    ],
-  },
-  {
-    title: "Co-founder and Full-stack Developer",
-    company_name: "FileQA",
-    icon: fileqa,
-    iconBg: "#eb6655",
-    date: "May 2023 - Jul 2023",
-    url: "https://fileqa.com/",
-    points: [
-      "We have developed a SaaS platform where users can ask questions about their documents or books and immediately receive precise and reliable answers.",
-      "Helped over 100 users get instant insights from their documents.",
-      "I handled the web development aspect and managed the platform deployment.",
-      // "I achieved a 20% faster loading speed by implementing Server-side rendering.",
-    ],
-  },
+  }
 ];
 
 export const socialLinks = [
@@ -161,7 +117,7 @@ export const projects = [
       "We have developed an interactive platform where users can ask questions about their documents or books and immediately receive precise and reliable answers.",
     articleLink:
       "https://blog.hmellahi.me/my-journey-of-building-our-first-saas-product",
-    link: "https://fileqa.com/",
+    // link: "https://fileqa.com/",
     screenshotsFolderRoot: "file-qa",
     screenshots: [
       "conversation-with-book.png",
