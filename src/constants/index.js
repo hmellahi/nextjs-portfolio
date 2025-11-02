@@ -135,8 +135,6 @@ export const projects = [
     screenshotsFolderRoot: "twitter",
     screenshots: [
       "profile.png",
-      "community.png",
-      "community-members.png",
       "sign-up.png",
     ],
   },
