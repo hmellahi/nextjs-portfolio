@@ -23,14 +23,14 @@ export const testimonials = [
   {
     name: "Abdelilah Lbardi",
     role: "Senior Software Engineer @Leyton",
-    text: "Hamza and I worked in different teams.\n\nHowever, we had the opportunity to exchange ideas about many technical challenges throughout my time at Leyton.\n\nI firmly believe that he would be a great asset to your company if you're looking for a frontend/full-stack engineer with deep expert knowledge of TypeScript, React, and Node.js.",
+    text: "Hamza and I worked in different teams.\n\nHowever, we had the opportunity to exchange ideas about many technical challenges throughout my time at Leyton.\n\nI firmly believe that he would be a great asset to your company if you're looking for a frontend/full-stack engineer with strong knowledge of TypeScript, React, and Node.js.",
     link: "https://linkedin.com/in/abdelilahlbardi",
     profileImg: "abdelilah.jpeg",
   },
   {
     name: "Othman Charai",
     role: "Software Engineer @YouCan",
-    text: "Hamza is a JavaScript and React expert who thrives on challenges. He consistently impresses me with his deep technical knowledge and problem-solving skills.\n\nHamza communicates with clarity, always backing his ideas with facts and practical solutions.\nHis passion for web development and ability to tackle complex issues make him an invaluable asset to any team.",
+    text: "Hamza is a skilled JavaScript and React developer who thrives on challenges. He impresses me with his technical knowledge and problem-solving skills. \n\n Hamza communicates with clarity, always backing his ideas with facts and practical solutions. \n His passion for web development and ability to tackle complex issues make him an invaluable asset to any team.",
     link: "https://www.linkedin.com/in/othman-charai-620590200/",
     profileImg: "othmane.jpeg",
   },
