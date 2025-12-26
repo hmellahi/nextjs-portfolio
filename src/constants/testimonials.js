@@ -44,7 +44,7 @@ export const testimonials = [
   {
     name: "Te-Chia Yu",
     role: "Founder @PostSale",
-    text: "I highly recommend Hamza. He is responsible and a proactive team player.",
+    text: "I highly recommend Hamza. He is responsible and a proactive team player. \n\n(Based on his review of my work and our discussions)",
     link: "https://www.linkedin.com/in/davidyu37/",
     profileImg: "techia.jpeg",
   },
