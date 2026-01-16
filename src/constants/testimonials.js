@@ -42,13 +42,6 @@ export const testimonials = [
     profileImg: "noura.jpeg",
   },
   {
-    name: "Te-Chia Yu",
-    role: "Founder @PostSale",
-    text: "I highly recommend Hamza. He is responsible and a proactive team player. \n\n(Based on his review of my work and our discussions)",
-    link: "https://www.linkedin.com/in/davidyu37/",
-    profileImg: "techia.jpeg",
-  },
-  {
     name: "A Fiverr Client",
     text: "Very fast and accurate in work. A+++++++++++",
   },
