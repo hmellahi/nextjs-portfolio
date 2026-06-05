@@ -39,7 +39,6 @@ export const testimonials = [
     role: "Software Engineer @Odoo",
     text: "Hamza is a former classmate with whom I have collaborated on several projects.\n\nI highly recommend him and trust his ability to deliver quality work.",
     link: "https://linkedin.com/in/flaredev",
-    profileImg: "noura.jpeg",
   },
   {
     name: "A Fiverr Client",
